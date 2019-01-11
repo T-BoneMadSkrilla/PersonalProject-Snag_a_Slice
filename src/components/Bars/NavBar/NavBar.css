@@ -89,7 +89,7 @@
     align-items: center;
     
     /* background-color: lightgrey; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 70px;
     width: 500px;
     margin-left: 40%;
@@ -97,5 +97,9 @@
 }
 
 .User_Text {
-    margin-top: 10%;
+    font-size: 18px;
+    margin-top: 15%;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
 }
