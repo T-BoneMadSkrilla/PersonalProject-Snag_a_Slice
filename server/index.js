@@ -19,7 +19,7 @@ app.use(session({
 
 massive(process.env.CONNECTION_STRING).then(db => {
     app.set("db", db);
-    console.log("Database Connected!")
+    console.log("Cowabunga! Your Database is Connected!")
 });
 
 app.listen(process.env.EXPRESS_PORT || 3056, () => {
