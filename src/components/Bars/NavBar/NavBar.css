@@ -1,0 +1,101 @@
+.NavBar_Container {
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    
+    background-color: hsl(37, 100%, 96%);
+    /* border: 1px solid grey; */
+    height: 10vh;
+    width: auto;
+}
+
+.Signage_Navigation {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+    /* background-color: lightgrey; */
+    /* border: 2px solid black; */
+    height: 70px;
+    width: 242px;
+}
+
+.Logo_Navigation {
+    /* background-color: lightgrey; */
+    /* border: 2px solid black; */
+    height: 60px;
+    width: 100px;
+    margin-left: 2%;
+}
+
+.Navigation_Pizza {
+    margin-left: 1px;
+    margin-top: 1%;
+}
+
+.Name_Navigation {
+    /* background-color: lightgrey; */
+    /* border: 2px solid black; */
+    height: 60px;
+    width: 300px;
+    margin-left: 2%;
+}
+
+.Logo_Text {
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Fugaz One', cursive;
+    font-size: 24px;
+    line-height: 100%
+}
+
+.Search_Navigation {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    
+    /* background-color: lightgrey; */
+    border: 2px solid black;
+
+    height: 70px;
+    width: 300px;
+    margin-left: 1%;
+}
+
+.Search_Field_Navigation {
+    height: 5vh;
+    width: 50vw; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+}
+
+.Search_Button_Navigation {
+    height: 4.8vh;
+    margin-left: -2%
+}
+
+.Filter_Button_Navigation {
+    height: 4.8vh;
+    margin-left: -2%;
+}
+
+.User_Navigation {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    align-items: center;
+    
+    /* background-color: lightgrey; */
+    border: 2px solid black;
+    height: 70px;
+    width: 500px;
+    margin-left: 40%;
+    /* margin-right: 0.5%; */
+}
+
+.User_Text {
+    margin-top: 10%;
+}
