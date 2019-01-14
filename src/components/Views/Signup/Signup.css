@@ -1,0 +1,83 @@
+.Signup {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    
+    background-color:  hsl(10, 9%, 52%);
+    /* border: 2px solid black; */
+    height: 638px;
+}
+
+.Signup_Container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    align-items: center;
+    
+    background-color: #EFE1C8;
+    /* border: 2px solid white; */
+    box-shadow: 8px 8px 8px black;
+    height: 600px;
+    width: 400px;
+}
+
+.Pizza_Image_Signup {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    
+    /* border: 2px solid black; */
+    height: 100px;
+    width: 100px;
+    margin-top: 5%;
+}
+
+.Text_Signup {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 0.5%;
+    margin-right: 28%
+}
+
+.E-mail_Text_Signup {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-right: 33%
+}
+
+.Input_Signup{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.Submit_Signup {
+    margin-top: 1%;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    background-color: hsl(9, 61%, 61%);
+    margin-top: 5%
+}
+
+.Submit_Text_Signup {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 4%
+}
+
+.AlreadyMember_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    text-decoration: underline;
+}
