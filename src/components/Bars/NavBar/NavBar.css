@@ -52,10 +52,6 @@
     line-height: 100%;
 }
 
-.Link {
-    text-decoration: underline;
-}
-
 .Search_Navigation {
     display: flex;
 	flex-direction: row;
@@ -118,5 +114,6 @@
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
+    color: black
     
 }

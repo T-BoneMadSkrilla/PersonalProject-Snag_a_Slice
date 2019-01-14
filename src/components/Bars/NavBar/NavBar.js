@@ -22,18 +22,26 @@ class NavBar extends Component {
                     <img class = "Filter_Image" src = "https://image.flaticon.com/icons/svg/25/25623.svg" alt = "Arrow Down" title = "Filter" height="20" width="20" />
                 </div>
                 <div className = "User_Navigation">
+                    <Link to = "/home">
                     <div className = "Home_Navigation">
                         <p className = "User_Text"> Home </p>
                     </div>
+                    </Link>
+                    <Link to = "/about">
                     <div className = "About_Navigation">
                         <p className = "User_Text"> About </p>
                     </div>
+                    </Link>
+                    <Link to = "/signup">
                     <div className = "Signup_Navigation">
                         <p className = "User_Text"> Sign up </p>
                     </div>
+                    </Link>
+                    <Link to = "/login">
                     <div className = "Login_Navigation">
                         <p className = "User_Text"> Login </p>
                     </div>
+                    </Link>
                 </div>
             </div>
             
