@@ -7,7 +7,8 @@ class Login extends Component {
             <div className = "Login">
                 <div className = "Login_Container">
                     <div className = "Pizza_Image_Login">
-                    <img class = "Navigation_Pizza" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" title = "Welcome" height="80" width="80" />
+                    <img class = "Navigation_Pizza" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" height="80" width="80" />
+                    {/* <img class = "Navigation_Pizza" src="pizza-slice.png" alt="Pizza Pie" height="80" width="80" /> */}
                     </div>
                     <div className = "Name_Login">
                         <p className = "Name_Text_Login"> Snag A Slice </p>
