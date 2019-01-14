@@ -1,0 +1,87 @@
+.Login {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    
+    background-color:  hsl(10, 9%, 52%);
+    /* border: 2px solid black; */
+    height: 638px;
+}
+
+.Login_Container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    align-items: center;
+    
+    background-color: #EFE1C8;
+    /* border: 2px solid white; */
+    box-shadow: 8px 8px 8px black;
+    height: 600px;
+    width: 400px;
+}
+
+.Pizza_Image_Login {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    
+    /* border: 2px solid black; */
+    height: 100px;
+    width: 100px;
+    margin-top: 10%;
+}
+
+
+
+.Name_Login {
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 300x;
+    margin-top: 5%;
+}
+
+.Name_Text_Login {
+    font-family: 'Fugaz One', cursive;
+    font-size: 45px;
+}
+
+.Text_Username_Login {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 18%;
+    width: 200px;
+    border-radius: 25px
+}
+
+.Text_Password_Login {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10%;
+    width: 200px;
+    border-radius: 25px
+
+}
+
+.Submit_Login {
+    margin-top: 1%;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    background-color: hsl(9, 61%, 61%);
+    margin-top: 20%;
+}
+
+.Submit_Text_Login {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 4%
+ 
+}
