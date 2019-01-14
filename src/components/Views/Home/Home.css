@@ -1,51 +1,137 @@
-.Home_Contaner {
+.Home_Container {
     display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
+
+    background-image: url("https://thepizzasnob.files.wordpress.com/2014/12/five-points-slice-shop-sign-resize.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1540px 640px;
+
+    background-color: ghostwhite;
+    /* border: 2px solid black; */
+    height: 638px;
+    width: auto;
+
 }
 
 .Header_Container {
     display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
-    height: 641px;
-
-    /* border: 2px solid black; */
-    background-image: url("https://thepizzasnob.files.wordpress.com/2014/12/five-points-slice-shop-sign-resize.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1550px 635px;
+	align-items: stretch;
+    
+    height: 630px;
+    width: 1530px;
+    /* border: 2px solid white; */
+    
 }
 
 .EditorsChoice_Container {
-    height: 600px;
-    width: 300px;
-    border: 2px solid white;
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+    
+    height: 315px;
+    /* height: 610px; */
+    width: 400px;
+    /* border: 2px solid white; */
     border-radius: 25px;
-    margin-left: 2%
+    margin-left: 1%;
+    margin-top: 4%;
+    background: rgba(255,255,255, .5)
+    
 }
 
-.ExploreBelow_Container {
-    height: 50px;
-    width: 170px;
-    border: 1px solid black;
-    border-radius: 25px;
-    margin-left: 20%;
-    margin-top: 35%;
-    background-color: white;
+.EditorsChoice_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 45px;
+    text-shadow: 0 0 10px whitesmoke;
+    -webkit-text-stroke: 0.2px whitesmoke;
+    text-decoration: underline;
+    /* color: whitesmoke; */
+    /* color: hsl(0, 0%, 19%); */
+    color: black;
+    margin-top: 4%
+
 }
 
-.Explore_Below {
-    margin-left: -10%;
-    margin-top: 8%;
+.EditorsChoice_Pizzeria_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: bold;
+    /* text-shadow:  0 0 15px white; */
+    /* text-shadow:  0 0 15px yellow; */
+    /* text-decoration: underline; */
+    -webkit-text-stroke: 0  1px black;
+    /* color: hsl(0, 0%, 19%); */
+    /* color: rgb(238, 118, 13); */
+    /* color: gold */
+    color: black
+}
+
+.EditorsChoice_Pizzeria_Location_Text {
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    font-weight: bold;
+    /* text-shadow:  0 0 15px white; */
+    /* text-shadow:  0 0 15px yellow; */
+
+    color: black;
 }
 
-.Arrow_Down {
-    margin-left: 68%;
-    margin-top: -42%
+.EditorsChoice_Pizzeria_ViewInformation_Button {
+    height: 50px;
+    width: 170px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-top: 15%
 }
+
+.View_Information_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+.Explore_Pizzerias_Container {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    
+    height: 50px;
+    width: 170px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-left: 145%;
+    margin-top: 300%;
+    background-color: black;
+}
+
+
+.Explore_Pizzeria_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin-top: 6%;
+    margin-right: 1%
+}
+
+
+
+.Explore_Pizza {
+    margin-bottom: 1%
+}
+
+
 

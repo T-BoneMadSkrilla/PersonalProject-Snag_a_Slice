@@ -16,10 +16,7 @@ class Landing extends Component {
                     <Link to = "/home">
                     <div className = "Button_Landing">
                         <div className = "Button_Landing_Container">
-                            <p className = "Button_Landing_Text"> Explore Pizzerias </p>
-                        </div>
-                        <div className = "Button_Landing_Image_Container">
-                            <img src="https://image.flaticon.com/icons/svg/1161/1161623.svg" alt="Pizza Slice" title = "Explore Pizzerias" height="20" width="20" />
+                            <p className = "Button_Landing_Text"> Enter </p>
                         </div>
                     </div>
                     </Link>
