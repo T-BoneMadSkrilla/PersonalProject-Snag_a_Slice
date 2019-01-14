@@ -20,12 +20,7 @@
     display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: stretch;
-    
-    height: 630px;
-    width: 1530px;
-    /* border: 2px solid white; */
-    
+	align-items: stretch;     
 }
 
 .EditorsChoice_Container {
@@ -35,12 +30,12 @@
 	align-items: center;
     
     height: 315px;
-    /* height: 610px; */
     width: 400px;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     border-radius: 25px;
-    margin-left: 1%;
-    margin-top: 4%;
+    margin-left: 8%;
+    margin-top: -10%;
+    
     background: rgba(255,255,255, .5)
     
 }
@@ -88,7 +83,7 @@
     background-color: black;
     border: 1px solid white;
     border-radius: 25px;
-    margin-top: 15%
+    margin-top: 30%
 }
 
 .View_Information_Text {
@@ -106,13 +101,15 @@
 	flex-direction: row;
 	justify-content: center;
     align-items: center;
+
     
     height: 50px;
     width: 170px;
     border: 1px solid white;
     border-radius: 25px;
-    margin-left: 145%;
-    margin-top: 300%;
+    margin-left: 160%;
+    margin-top: 220%;
+    /* margin-top: 500%; */
     background-color: black;
 }
 
