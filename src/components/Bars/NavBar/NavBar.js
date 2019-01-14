@@ -24,22 +24,22 @@ class NavBar extends Component {
                 <div className = "User_Navigation">
                     <Link to = "/home">
                     <div className = "Home_Navigation">
-                        <p className = "User_Text"> Home </p>
+                        <p className = "User_Text" title = "Home"> Home </p>
                     </div>
                     </Link>
                     <Link to = "/about">
                     <div className = "About_Navigation">
-                        <p className = "User_Text"> About </p>
+                        <p className = "User_Text" title = "About"> About </p>
                     </div>
                     </Link>
                     <Link to = "/signup">
                     <div className = "Signup_Navigation">
-                        <p className = "User_Text"> Sign up </p>
+                        <p className = "User_Text" title = "Signup"> Sign up </p>
                     </div>
                     </Link>
                     <Link to = "/login">
                     <div className = "Login_Navigation">
-                        <p className = "User_Text"> Login </p>
+                        <p className = "User_Text" title = "Login"> Login </p>
                     </div>
                     </Link>
                 </div>
