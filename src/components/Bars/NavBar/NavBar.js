@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
 import './NavBar.css';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class NavBar extends Component {
     render(){
         return(
             <div className = "NavBar_Container">
+                <Link to = "/">
                 <div className = "Signage_Navigation">
                     <div className = "Logo_Navigation">
                         <img class = "Navigation_Pizza" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" title = "Welcome" height="54" width="62" />
                     </div>
                     <div className = "Name_Navigation">
-                        <h3 className = "Logo_Text" title = "Home"> Snag A Slice </h3>
+                        <h3 className = "Logo_Text" title = "Landing"> Snag A Slice </h3>
                     </div>
                 </div>
-                <div className = "Search_Navigation"></div>
+                </Link>
+                <div className = "Search_Navigation">
+                    <input class = "Search_Field" type = "text" title = "Search"/>
+                    <img class = "Search_Image" src = "https://image.flaticon.com/icons/svg/126/126474.svg" alt = "Magnifing Glass" title = "Search" height="20" width="20" />
+                    <img class = "Filter_Image" src = "https://image.flaticon.com/icons/svg/25/25623.svg" alt = "Arrow Down" title = "Filter" height="20" width="20" />
+                </div>
                 <div className = "User_Navigation">
-                    <div className = "Location_Navigation">
-                        <p className = "User_Text"> Location </p>
+                    <div className = "Home_Navigation">
+                        <p className = "User_Text"> Home </p>
                     </div>
                     <div className = "About_Navigation">
                         <p className = "User_Text"> About </p>

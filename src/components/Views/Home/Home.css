@@ -1,0 +1,51 @@
+.Home_Contaner {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Header_Container {
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    height: 641px;
+
+    /* border: 2px solid black; */
+    background-image: url("https://thepizzasnob.files.wordpress.com/2014/12/five-points-slice-shop-sign-resize.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1550px 635px;
+}
+
+.EditorsChoice_Container {
+    height: 600px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin-left: 2%
+}
+
+.ExploreBelow_Container {
+    height: 50px;
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-top: 35%;
+    background-color: white;
+}
+
+.Explore_Below {
+    margin-left: 18%;
+    margin-top: 8%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.Arrow_Down {
+    margin-left: 80%;
+    margin-top: -39%
+}
+
