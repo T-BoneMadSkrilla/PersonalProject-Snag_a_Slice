@@ -7,10 +7,10 @@ class Home extends Component {
             <div className = "Home_Container">
                 <div className = "Header_Container">
                     <div className = "EditorsChoice_Container"></div>
-                    <div className = "ExploreBelow_Container">
+                    <button className = "ExploreBelow_Container">
                         <p className = "Explore_Below"> Explore Below </p>
                         <img class = "Arrow_Down" src = "https://image.flaticon.com/icons/svg/25/25623.svg" alt = "Arrow Down" title = "Filter" height="10" width="10" />
-                    </div>
+                    </button>
                 </div>
                 <div className = "MainContent_Container"></div>
             </div>
