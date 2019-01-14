@@ -24,7 +24,7 @@ class NavBar extends Component {
                 <div className = "User_Navigation">
                     <Link to = "/home">
                     <div className = "Home_Navigation">
-                        <p className = "User_Text" title = "Home"> Home </p>
+                        <p className = "User_Text" title = "Home" hover> Home </p>
                     </div>
                     </Link>
                     <Link to = "/about">
