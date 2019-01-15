@@ -11,6 +11,8 @@ class Login extends Component {
             username: "",
             password: ""
         };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     };
 
     handleChange(e){
@@ -21,14 +23,14 @@ class Login extends Component {
         e.preventDefault();
         this.props.login(this.state.username, this.state.password);
     };
-
+    
     render(){
         if (this.props.user.username){
             return <Redirect to = '/account' />
         };
         return(
             <div className = "Login">
-                <div className = "Login_Container">
+                <form onSubmit={this.handleSubmit} className = "Login_Container">
                     <div className = "Pizza_Image_Login">
                     <img class = "Navigation_Pizza" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" height="80" width="80" />
                     </div>
@@ -47,7 +49,7 @@ class Login extends Component {
                         onChange={this.handleChange} 
                         value={this.state.password} 
                         className = "Text_Password_Login" 
-                        type = "text" 
+                        type = "password" 
                         name = "password" 
                         placeholder = "Enter Password" 
                     />
@@ -57,7 +59,7 @@ class Login extends Component {
                     <Link to = "/signup">
                     <p className = "AlreadyMember_Text"> Not a member? Sign Up now.</p>
                     </Link>
-                </div>
+                </form>
             </div>
         )
     };

@@ -21,8 +21,14 @@ massive(process.env.CONNECTION_STRING).then(db => {
     console.log("Cowabunga! Your Database is Connected!")
 });
 
+// Login Endpoint
 app.post("/auth/login", authController.login);
 
+// Sign Up Endpoint
+app.post("/auth/signup", authController.signup);
+
+// User Endpoint
+app.get("/auth/user", authController.user);
 
 app.listen(process.env.EXPRESS_PORT || 3056, () => {
     console.log(`Listening on ${process.env.EXPRESS_PORT}`);
