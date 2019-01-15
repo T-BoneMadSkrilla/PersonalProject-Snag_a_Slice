@@ -1,0 +1,90 @@
+.Account {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    align-items: stretch;
+    
+    background-image: url("https://images.homedepot-static.com/productImages/b2ee0ac2-0381-44fd-9770-da63db8a804c/svn/various-wood-tones-reclaimed-wood-barn-wood-boards-27862-64_1000.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1540px 638px;
+    /* opacity: 0.9; */
+    /* border: 2px solid black; */
+    height: 638px;
+}
+
+.Account_Container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+}
+
+.User_Bar_Account {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+    
+    border: 1px solid black;
+    background-color: hsl(31, 32%, 58%);
+    border-radius: 15px;
+    height: 70px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.User_Tab {
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color: white;
+    height: 55px;
+    width: 250px;
+}
+
+.Image_Tab {
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    margin-left: 3%;
+    height: 45px;
+    width: 55px;
+}
+
+.Icon_Tab {
+    height: 30px;
+    width: 30px;
+    margin-top: 15%;
+    margin-left: 20%
+}
+
+.Text_Tab {
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    margin-left: 2%;
+    height: 45px;
+    width: 170px;
+}
+
+.Icon_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 18px;
+    margin-top: 6%;
+    color: black;
+}
+
+
+/* .Restaurant_Information_Card {
+    border: 2px solid black;
+    background-color: lightgray;
+    border-radius: 15px;
+    height: 450px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+} */
