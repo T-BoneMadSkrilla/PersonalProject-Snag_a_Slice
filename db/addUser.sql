@@ -1,2 +1,6 @@
-INSERT INTO users (username, password) VALUES (${username}, ${password}
-) RETURNING *;
+INSERT INTO users 
+(username, password, first_name, last_name, email) 
+VALUES 
+(${username}, ${password}, ${first_name}, ${last_name}, ${email}
+) 
+RETURNING *;
