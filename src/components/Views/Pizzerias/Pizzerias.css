@@ -1,0 +1,154 @@
+.Pizzeria {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+    
+    background-image: url("https://images.homedepot-static.com/productImages/b2ee0ac2-0381-44fd-9770-da63db8a804c/svn/various-wood-tones-reclaimed-wood-barn-wood-boards-27862-64_1000.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1540px 638px;
+    /* opacity: 0.9; */
+    /* border: 2px solid black; */
+    height: 638px;
+}
+
+.Left_Right_Arrow {
+    /* border: 2px solid white; */
+    height: 90px;
+    width: 90px;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.Arrow_Icon {
+    height: 80px;
+    width: 80px;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+.Front_Pizzeria_Card {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+    
+    background-image: url("https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/46524197_10156264262978600_4574992369060937728_n.jpg?_nc_cat=100&_nc_ht=scontent-ort2-1.xx&oh=c95da29d91b64091cf97f74dfd928223&oe=5CC801B1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 900px 600px;
+    /* background-color: lightgray; */
+    border: 8px solid black;
+    /* border: 4px solid hsl(10, 7%, 32%); */
+    border-radius: 25px;
+    /* box-shadow: 10px 5px 5px 1px black; */
+    box-shadow: 10px 5px 5px 1px hsl(40, 8%, 8%) ;
+    height: 600px;
+    width: 900px;
+}
+
+.Middle_Content_Pizzeria {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+    
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    height: 555px;
+    width: 480px;
+    margin-right: 2%;
+}
+
+.Middle_Title_Pizzeria {
+    /* border: 2px solid white; */
+    height: 100px;
+    width: 400px;
+    margin-top: 1%;
+}
+
+.Middle_Location_Pizzeria {
+    /* border: 2px solid white; */
+    height: 100px;
+    width: 400px;
+    margin-top: 1%;
+}
+
+.Middle_Button_Pizzeria {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 45px;
+    height: 50px;
+    width: 150px;
+    margin-top: 60%;
+}
+
+
+.Middle_Title_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 45px;
+    color: black;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.Middle_Location_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 25px;
+    color: black;
+    margin-left: 22%;
+    margin-top: 5%;
+}
+
+.Middle_Button_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-left: 11%;
+    margin-top: 8%;
+}
+
+.Right_Content_Pizzeria {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+    
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    height: 555px;
+    width: 200px;
+    margin-right: 2%;
+}
+
+.Right_Rating_Container {
+    background-color: black;
+    border: 4px solid white;
+    border-radius: 25px;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 4%
+}
+
+.Right_Rating_Number_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    margin-left: 29%;
+    margin-top: 28%;
+}
+
+.Right_Rating_Word_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-left: 5.5%;
+    margin-top: 33%;
+
+}
