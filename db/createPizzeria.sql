@@ -2,9 +2,9 @@ INSERT INTO pizzeria
 (
 name,
 address,
+zipcode,
 city,
 state,
-cuisine,
 aggregate_rating,
 website_url,
 image_url,
