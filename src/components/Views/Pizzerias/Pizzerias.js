@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom";
 import './Pizzerias.css'
 
 class Pizzerias extends Component {
@@ -16,9 +17,11 @@ class Pizzerias extends Component {
                         <div className = "Middle_Location_Pizzeria">
                             <p className = "Middle_Location_Text"> Chattanooga, TN </p>
                         </div>
+                        <Link to = "/pizzeria/information">
                         <div className = "Middle_Button_Pizzeria">
                             <p className = "Middle_Button_Text"> View Information </p>
                         </div>
+                        </Link>
                     </div>
                     <div className = "Right_Content_Pizzeria">
                         <div className = "Right_Rating_Container">
