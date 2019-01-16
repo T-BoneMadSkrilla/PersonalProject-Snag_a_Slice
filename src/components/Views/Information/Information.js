@@ -63,7 +63,16 @@ class Information extends Component {
                                 <div className = "Back_Right_Middle_Comment">
                                     <p className = "Back_Right_Middle_Comment_Text"> Comment </p>
                                 </div>
-                                <div className = "Back_Right_Middle_Input" />
+                                <div className = "Back_Right_Middle_Input">
+                                </div>
+                                <div className = "Back_Right_Middle_Button">
+                                    <button className = "Back_Right_Middle_Update_Delete_Button">
+                                        <p className = "Back_Right_Middle_Update_Text"> Update </p>
+                                    </button>
+                                    <button className = "Back_Right_Middle_Update_Delete_Button">
+                                        <p className = "Back_Right_Middle_Delete_Text"> Delete </p>
+                                    </button>
+                                </div>
                             </div>
                             <div className = "Back_Right_Bottom_Content">
                                 <div className = "Back_Right-Bottom_Name">
