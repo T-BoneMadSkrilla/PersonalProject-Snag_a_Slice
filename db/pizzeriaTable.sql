@@ -6,12 +6,10 @@ address varchar (120),
 zipcode integer,
 city varchar (120),
 state varchar (120),
-cuisine varchar (120),
 aggregate_rating integer,
 website_url text,
-image_url varchar (200),
-logo_url varchar (200),
-facebook_url varchar (200),
-twitter_url varchar (200),
-instagram_url varchar (200)
+phone_number integer,
+logo_image varchar (200),
+pizzeria_image varchar (200),
+pizza_image varchar (200)
 );
