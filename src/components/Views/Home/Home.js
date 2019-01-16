@@ -10,8 +10,8 @@ class Home extends Component {
                 <div className = "Header_Container">
                     <div className = "EditorsChoice_Container">
                         <p className = "EditorsChoice_Text"> Editors Choice </p>
-                        <p className = "EditorsChoice_Pizzeria_Text"> Five Points Pizza </p>
-                        <p className = "EditorsChoice_Pizzeria_Location_Text"> Nashville, Tennessee </p>
+                        <p className = "EditorsChoice_Pizzeria_Text"> Lupi's Pizza Pie </p>
+                        <p className = "EditorsChoice_Pizzeria_Location_Text"> Chattanooga, Tennessee </p>
                         <Link to = "/pizzeria/information">
                         <div className = "EditorsChoice_Pizzeria_ViewInformation_Button">
                             <p className = "View_Information_Text"> View Information </p>

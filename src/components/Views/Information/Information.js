@@ -9,7 +9,14 @@ class Information extends Component {
                 <div className = "Back_Pizzeria_Card">
                     <div className = "Back_Top_Content_Pizzeria">
                         <div className = "Back_Top_Logo_Pizzeria"></div>
-                        <div className = "Back_Top_Tab_Pizzeria"></div>
+                        <div className = "Back_Top_Tab_Pizzeria">
+                            <div className = "Back_Top_Tab_View_Review">
+                                <p className = "Back_Top_Tab_View_Text"> View Reviews </p>
+                            </div>
+                            <div className = "Back_Top_Tab_Add_Review">
+                                <p className = "Back_Top_Tab_Add_Text"> Add Reviews </p>
+                            </div>
+                        </div>
                     </div>
                     <div className = "Back_Bottom_Content_Pizzeria">
                         <div className = "Back_Left_Content_Pizzeria">
@@ -71,9 +78,9 @@ class Information extends Component {
                                     <p className = "Back_Right_Bottom_Text"> Pizzeria Name: </p>
                                     <input className = "Back_Right_Bottom_Input_Field" type = "text" placeholder = "Type Here"></input>
                                 </div>
-                                <div className = "Back_Right-Bottom_Post_Button">
-                                    <p className = "Back_Right_Bottom_Text"></p>
-                                </div>
+                                <button className = "Back_Right-Bottom_Post_Button">
+                                    <p className = "Back_Right_Bottom_Button_Text"> Post Comment </p>
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -20,8 +20,9 @@
 	justify-content: flex-start;
 	align-items: stretch;
     
-    
-    background-color: hsl(38, 54%, 86%);
+    background-color: hsl(31, 33%, 59%);
+    /* background-color: #CDCDCD; */
+    /* background-color: hsl(38, 54%, 86%); */
     border: 8px solid black;
     /* border: 4px solid hsl(10, 7%, 32%); */
     border-radius: 25px;
@@ -39,7 +40,7 @@
     
     /* border: 2px solid black; */
     border-radius: 15px;
-    margin-left: 0.5%;
+    margin-left: 16%;
     margin-top: 0.5%;
     height: 70px;
     width: 775px
@@ -58,12 +59,74 @@
 }
 
 .Back_Top_Tab_Pizzeria {
-    border: 1.5px solid black;
-    border-radius: 15px;
-    margin-right: 3%;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    
+    /* border: 1.5px solid black; */
+    /* border-radius: 15px; */
+    margin-right: 18.5%;
     height: 60px;
     width: 300px;
 }
+
+/* Condense into one  */
+
+.Back_Top_Tab_View_Review {
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 50px;
+    width: 140px;
+    margin-left: 1%;
+}
+
+.Back_Top_Tab_Add_Review {
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 50px;
+    width: 140px;
+    margin-right: 1%;
+}
+
+/* Condense into one */
+
+.Back_Top_Tab_View_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 18px;
+
+    color: white;
+    text-decoration: underline;
+    margin-top: 10%;
+    /* margin-left: 6%; */
+    margin-bottom: 8%;
+    margin-left: 6%;
+}
+
+.Back_Top_Tab_Add_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 18px;
+
+    color: white;
+    text-decoration: underline;
+    margin-top: 10%;
+    /* margin-left: 6%; */
+    margin-bottom: 8%;
+    margin-left: 9%;
+}
+
 
 .Back_Bottom_Content_Pizzeria {
     display: flex;
@@ -318,8 +381,19 @@
 }
 
 .Back_Right-Bottom_Post_Button {
-    border: 2px solid black;
-    margin-top: 2%;
-    height: 45px;
+    /* border-radius: 5px; */
+    background-color: black;
+    border: 2px solid white;
+    margin-top: 4%;
+    margin-left: 3.5%;
+    width: 300px;
+    height: 30px;
+}
 
+.Back_Right_Bottom_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 16px;
+    color: white;
+    /* margin-left: 28%; */
+    margin-top: 0.5%;
 }
