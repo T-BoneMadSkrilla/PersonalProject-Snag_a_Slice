@@ -35,7 +35,7 @@ class Signup extends Component {
             <div className = "Signup">
                 <form onSubmit={this.handleSubmit} className = "Signup_Container">
                     <div className = "Pizza_Image_Signup">
-                    <img class = "Navigation_Pizza" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" title = "Welcome" height="80" width="80" />
+                    <img class = "Navigation_Pizza" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" height="80" width="80" />
                     </div>
                     <div className = "Name_Signup">
                     <p className = "Name_Text_Login"> Sign-Up </p>
