@@ -2,6 +2,7 @@ import axios from "axios";
 
 const initialState = {
     user: {},
+    pizzeria: [],
     error: ""
 };
 
@@ -9,6 +10,7 @@ const initialState = {
 const LOGIN = "LOGIN";
 const SIGN_UP = "SIGN_UP";
 const GET_USER = "GET_USER";
+const Get_Pizzeria_Data = "Pizzeria_Data";
 
 
 // Login Action Creator
@@ -35,6 +37,14 @@ export function getUser() {
     };
 };
 
+// Get Pizzeria Action Creator
+export function getPizzeria() {
+    return {
+      type: Get_Pizzeria_Data,
+      payload: axios.get("/pizzerias/all")
+    };
+};
+
 
 // Reducer Function
 export default function reducer(state = initialState, action){
@@ -47,6 +57,10 @@ export default function reducer(state = initialState, action){
             return { ...state, user: action.payload.data};
         case GET_USER + "_FULFILLED":
             return { ...state, user: action.payload.data };
+        case Get_Pizzeria_Data + "_FULFILLED":
+            return { ...state, pizzeria: action.payload.data};
+        case Get_Pizzeria_Data + "_REJECTED":
+            return { ...state, error: "Pizzeria Data Could Not Be Found"};
         default:
             return state;
     };
