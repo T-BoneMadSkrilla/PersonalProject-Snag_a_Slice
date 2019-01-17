@@ -5,6 +5,7 @@ const massive = require("massive");
 const session = require('express-session');
 const app = express();
 const authController = require("./controllers/authController");
+const pizzeriaController = require("./controllers/pizzeriaController");
 
 app.use(json());
 app.use(session({
@@ -21,14 +22,13 @@ massive(process.env.CONNECTION_STRING).then(db => {
     console.log("Cowabunga! Your Database is Connected!")
 });
 
-// Login Endpoint
+// Users Endpoints
 app.post("/auth/login", authController.login);
-
-// Sign Up Endpoint
 app.post("/auth/signup", authController.signup);
-
-// User Endpoint
 app.get("/auth/user", authController.user);
+
+// Pizzerias Endpoints
+app.get("/pizzerias/all", pizzeriaController.getPizzerias);
 
 app.listen(process.env.EXPRESS_PORT || 3056, () => {
     console.log(`Listening on ${process.env.EXPRESS_PORT}`);
