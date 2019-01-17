@@ -32,41 +32,151 @@
 
 .Front_Pizzeria_Card {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: nowrap;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: stretch;
     
-    background-image: url("https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/46524197_10156264262978600_4574992369060937728_n.jpg?_nc_cat=100&_nc_ht=scontent-ort2-1.xx&oh=c95da29d91b64091cf97f74dfd928223&oe=5CC801B1");
+    /* background-color: hsl(49, 13%, 84%); */
+    /* background-color: hsl(35, 70%, 70%); */
+    /* background-color: hsl(150, 1%, 65%); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 900px 600px;
-    /* background-color: lightgray; */
     border: 8px solid black;
     /* border: 4px solid hsl(10, 7%, 32%); */
     border-radius: 25px;
-    /* box-shadow: 10px 5px 5px 1px black; */
     box-shadow: 10px 5px 5px 1px hsl(40, 8%, 8%) ;
     height: 600px;
     width: 900px;
 }
 
-.Middle_Content_Pizzeria {
+.Front_Pizzeria_Card_Image {
+    display: flex;
+	flex-direction: row;
+    align-items: stretch;
+    position: absolute;
+    z-index: 1;
+    
+    height: 585px;
+    width: 885px;
+    border-radius: 16px;
+    opacity: .8;  
+}
+
+.Front_Middle_Pizzeria_Card_Content {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+    
+    border: 2px solid black;
+    width: 500px;
+    margin: 1%;
+    opacity: 1;
+    z-index: 6;
+}
+
+.Front_Middle_Pizzeria_Card_Title {
     display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
     
+    
     /* border: 2px solid black; */
-    border-radius: 25px;
-    height: 555px;
-    width: 480px;
-    margin-right: 2%;
+    height: 100px;
+    width: 487px;
+    margin: 1%
+}
+
+.Front_Middle_Pizzeria_Card_Title_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 48px;
+    color: black;
+    margin-top: 4%;
+    z-index: 5;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.Front_Middle_Pizzeria_Card_Location {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    
+    /* border: 2px solid black; */
+    height: 50px;
+    width: 487px;
+    margin: 1%
+}
+
+.Front_Middle_Pizzeria_Card_Location_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 25px;
+    color: black;
+    z-index: 3;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white;
+}
+.Front_Middle_Pizzeria_Card_Button {
+    height: 50px;
+    width: 150px;
+    margin: 1%;
+    margin-top: 330px;
+    margin-left: 35%;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 45px;
+    z-index: 2;
+}
+
+.Front_Middle_Pizzeria_Card_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 15px;
+    color: whitesmoke;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.Front_Right_Pizzeria_Card_Content {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+    
+    border: 2px solid black;
+    width: 180px;
+    margin: 1%;
+    opacity: 5;
+    z-index: 7;
+}
+
+.Front_Right_Pizzeria_Rating_Content {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    
+    background-color: black;
+    border: 2px solid white;
+    height: 110px;
+    width: 110px;
+    margin-bottom: 10%
+}
+
+.Front_Right_Pizzeia_Rating_Text{
+    font-family: 'Fugaz One', cursive;
+    font-size: 55px;
+    color: whitesmoke;
+    margin-top: 15%;
+    margin-right: 5%;
 }
 
 .Middle_Title_Pizzeria {
     /* border: 2px solid white; */
-    height: 100px;
-    width: 400px;
+    height: 200px;
+    width: 600px;
     margin-top: 1%;
 }
 
@@ -87,13 +197,13 @@
 }
 
 
-.Middle_Title_Text {
+/* .Middle_Title_Text {
     font-family: 'Fugaz One', cursive;
     font-size: 45px;
     color: black;
-    margin-left: 5%;
+    margin-left: 25%;
     margin-top: 5%;
-}
+} */
 
 .Middle_Location_Text {
     font-family: 'Fugaz One', cursive;
@@ -118,7 +228,7 @@
 	justify-content: flex-end;
 	align-items: center;
     
-    /* border: 2px solid black; */
+    border: 2px solid black;
     border-radius: 25px;
     height: 555px;
     width: 200px;
