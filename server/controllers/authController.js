@@ -2,7 +2,7 @@ const bcrypt = require("bcryptjs");
 
 const login = (req, res) => {
     const db = req.app.get("db");
-    db.findUser({username: req.body.username})
+    db.getUser({username: req.body.username})
     .then(async users => {
         if (!users.length){
             res.status(401).json({error: "User Not Found"})
