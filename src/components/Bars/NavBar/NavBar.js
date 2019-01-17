@@ -17,9 +17,9 @@ class NavBar extends Component {
                 </div>
                 </Link>
                 <div className = "Search_Navigation">
-                    <input class = "Search_Field" type = "text" title = "Search"/>
-                    <img class = "Search_Image" src = "https://image.flaticon.com/icons/svg/126/126474.svg" alt = "Magnifing Glass" title = "Search" height="20" width="20" />
-                    <img class = "Filter_Image" src = "https://image.flaticon.com/icons/svg/25/25623.svg" alt = "Arrow Down" title = "Filter" height="20" width="20" />
+                    <input class = "Search_Field" type = "text" title = "Search" />
+                    <img class = "Search_Image" src = "https://image.flaticon.com/icons/svg/126/126474.svg" alt = "Magnifing Glass" title = "Search"/>
+                    <img class = "Filter_Image" src = "https://image.flaticon.com/icons/svg/25/25623.svg" alt = "Arrow Down" title = "Filter" />
                 </div>
                 <div className = "User_Navigation">
                     <Link to = "/home">
