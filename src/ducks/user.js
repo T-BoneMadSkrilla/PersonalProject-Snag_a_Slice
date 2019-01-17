@@ -5,7 +5,7 @@ const initialState = {
     error: ""
 };
 
-// action types
+// Action types
 const LOGIN = "LOGIN";
 const SIGN_UP = "SIGN_UP";
 const GET_USER = "GET_USER";
@@ -36,7 +36,7 @@ export function getUser() {
 };
 
 
-// reducer function
+// Reducer Function
 export default function reducer(state = initialState, action){
     switch (action.type){
         case LOGIN + "_FULFILLED":
