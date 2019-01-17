@@ -69,7 +69,7 @@
 	justify-content: flex-start;
 	align-items: stretch;
     
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 500px;
     margin: 1%;
     opacity: 1;
@@ -145,7 +145,7 @@
 	justify-content: flex-end;
 	align-items: center;
     
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 180px;
     margin: 1%;
     opacity: 5;
