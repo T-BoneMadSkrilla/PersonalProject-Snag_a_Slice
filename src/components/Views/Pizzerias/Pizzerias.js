@@ -9,7 +9,6 @@ class Pizzerias extends Component {
         super()
 
         this.state = {
-            restaurant: getPizzeria,
             counter: 0
         };
 
@@ -23,7 +22,7 @@ class Pizzerias extends Component {
 
     handleClickPrevious(){
         if (this.state.counter === 0){
-            this.setState ( { counter: 0} )
+            this.setState ( { counter: this.props.user.length - 1} )
         }
         else {
             this.setState( { counter: this.state.counter -1 } )
@@ -31,7 +30,7 @@ class Pizzerias extends Component {
     };
 
     handleClickNext(){
-        if (this.state.counter === this.state.restaurant) {
+        if (this.state.counter >= this.props.user.length - 1) {
             this.setState ( { counter: 0 } )
         }
         else {
@@ -40,11 +39,13 @@ class Pizzerias extends Component {
     };
 
     render(){
-        console.table(this.props.user)
-        let frontcardDiplay = this.props.user.map(pizza => {
+        console.table(this.state)
+        console.log(this.props)
+        // let frontcardDiplay = this.props.user[this.props.currentIndex];
             return(
-                <div className = "Pizzeria" id={pizza.id}>
-                    <button className = "Left_Right_Arrow" onClick={ () => this.handleClickPrevious}>
+                this.props.user[this.state.counter] ?
+                <div className = "Pizzeria" id={this.props.user[this.state.counter].id}>
+                    <button className = "Left_Right_Arrow" onClick={ () => this.handleClickPrevious()}>
                         <img
                             className = "Arrow_Icon" 
                             src = "https://image.flaticon.com/icons/svg/17/17264.svg" 
@@ -55,13 +56,13 @@ class Pizzerias extends Component {
                     <div className = "Front_Pizzeria_Card">
                         <div className = "Front_Middle_Pizzeria_Card_Content">
                             <div className = "Front_Middle_Pizzeria_Card_Title">
-                                <div className = "Front_Middle_Pizzeria_Card_Title_Text"> {pizza.name} </div>
+                                <div className = "Front_Middle_Pizzeria_Card_Title_Text"> {this.props.user[this.state.counter].name} </div>
                             </div>
                             <div className = "Front_Middle_Pizzeria_Card_Location">
-                                <p className = "Front_Middle_Pizzeria_Card_Location_Text"> {pizza.city}, </p>
+                                <p className = "Front_Middle_Pizzeria_Card_Location_Text"> {this.props.user[this.state.counter].city}, </p>
                                 <br />
                                 <br />
-                                <p className = "Front_Middle_Pizzeria_Card_Location_Text"> {pizza.state} </p>
+                                <p className = "Front_Middle_Pizzeria_Card_Location_Text"> {this.props.user[this.state.counter].state} </p>
                             </div>
                             <Link className = "Front_Middle_Pizzeria_Card_Button" to = "/pizzeria/information">
                                 <p className = "Front_Middle_Pizzeria_Card_Button_Text"> View Information </p>
@@ -69,15 +70,15 @@ class Pizzerias extends Component {
                         </div>
                         <div className = "Front_Right_Pizzeria_Card_Content">
                             <div className = "Front_Right_Pizzeria_Rating_Content">
-                                <p className = "Front_Right_Pizzeia_Rating_Text"> {pizza.aggregate_rating} </p>
+                                <p className = "Front_Right_Pizzeia_Rating_Text"> {this.props.user[this.state.counter].aggregate_rating} </p>
                             </div>
                             <div className = "Front_Right_Pizzeria_Rating_Content">
                                 <p className = "Front_Right_Pizzeia_Rating_Text"></p>
                             </div>
                         </div>
-                        <img src = {pizza.pizza_image} className = "Front_Pizzeria_Card_Image"alt="pizza" />
+                        <img src = {this.props.user[this.state.counter].pizza_image}  className = "Front_Pizzeria_Card_Image"alt="pizza" />
                     </div>
-                    <button className = "Left_Right_Arrow" onClick={ () => this.handleClickNext}>
+                    <button className = "Left_Right_Arrow" onClick={ () => this.handleClickNext()}>
                         <img 
                             className = "Arrow_Icon" 
                             src="https://image.flaticon.com/icons/svg/17/17944.svg" 
@@ -86,45 +87,11 @@ class Pizzerias extends Component {
                         />
                     </button>
                 </div>
+
+                : <h1>None found</h1>
                 
             )
-        })
-        return(
-            // <div className = "Pizzeria">
-            //     <button className = "Left_Right_Arrow" onClick={ () => this.handleClickPrevious}>
-            //         <img 
-            //             className = "Arrow_Icon" src="https://image.flaticon.com/icons/svg/17/17264.svg" alt="Left Arrow" title = "Previous" 
-            //         />
-            //     </button>
-            //     <div className = "Front_Pizzeria_Card">
-            //         <div className = "Middle_Content_Pizzeria">
-            //             <div className = "Middle_Title_Pizzeria">
-            //                 <p className = "Middle_Title_Text"> Pizzeria Name </p>
-            //             </div>
-            //             <div className = "Middle_Location_Pizzeria">
-            //                 <p className = "Middle_Location_Text"> Chattanooga, TN </p>
-            //             </div>
-            //             <Link to = "/pizzeria/information">
-            //             <div className = "Middle_Button_Pizzeria">
-            //                 <p className = "Middle_Button_Text"> View Information </p>
-            //             </div>
-            //             </Link>
-            //         </div>
-            //         <div className = "Right_Content_Pizzeria">
-            //             <div className = "Right_Rating_Container">
-            //                 <p className = "Right_Rating_Number_Text"> 5.0 </p>
-            //             </div>
-            //             <div className = "Right_Rating_Container">
-            //                 <p className = "Right_Rating_Word_Text"> Excellent </p>                            
-            //             </div>
-            //         </div>
-            //     </div>
-            //     <button className = "Left_Right_Arrow" onClick={ () => this.handleClickNext}>
-            //         <img className = "Arrow_Icon" src="https://image.flaticon.com/icons/svg/17/17944.svg" alt="Right Arrow" title = "Next" />
-            //     </button>
-            // </div>
-            <div>{frontcardDiplay}</div>
-        )
+        
     };
 };
 
