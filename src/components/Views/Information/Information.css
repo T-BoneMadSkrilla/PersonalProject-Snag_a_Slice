@@ -1,439 +1,113 @@
 .Information {
-	display: flex;
+    display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
-	
+    align-items: center;
     
     background-image: url("https://images.homedepot-static.com/productImages/b2ee0ac2-0381-44fd-9770-da63db8a804c/svn/various-wood-tones-reclaimed-wood-barn-wood-boards-27862-64_1000.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1540px 638px;
-    /* opacity: 0.9; */
+    /* background-color:  hsl(10, 9%, 52%); */
     /* border: 2px solid black; */
     height: 638px;
 }
 
-.Back_Pizzeria_Card {
+.Information_Container {
     display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: stretch;
-    
-    background-color: hsl(31, 33%, 59%);
-    /* background-color: #CDCDCD; */
-    /* background-color: hsl(38, 54%, 86%); */
-    border: 8px solid black;
-    /* border: 4px solid hsl(10, 7%, 32%); */
-    border-radius: 25px;
-    /* box-shadow: 10px 5px 5px 1px black; */
-    box-shadow: 10px 5px 5px 1px hsl(40, 8%, 8%) ;
-    height: 620px;
-    width: 800px;
-}
-
-.Back_Top_Content_Pizzeria {
-    display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	align-items: center;
     
-    /* border: 2px solid black; */
-    border-radius: 15px;
-    margin-left: 16%;
-    margin-top: 0.5%;
-    height: 70px;
-    width: 775px
+    background-color: hsl(11, 88%, 23%);
+    /* background-color: #B3B6B7; */
+    /* background-color: #AF9164; */
+    /* background-color: #EFE1C8; */
+    /* border: 2px solid white; */
+    box-shadow: 2px 2px 8px black;
+    border: 1px solid #F7F3E3;
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
 }
 
-.Back_Top_Logo_Pizzeria {
-    background-image: url("https://www.dinnerdeliveredcleveland.com/png/v_471_i611.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55px 55px;
-    border: 1.5px solid black;
-    border-radius: 45px;
-    margin-left: 0.5%;
+.Information_Navigation_Bar {
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    
     height: 60px;
-    width: 60px;
+    width: 380px;
+    background-color: hsl(36, 32%, 54%);
+    /* border: 0.5px solid #F7F3E3; */
+    border-radius: 10px;
+    margin-top: 6px;
 }
 
-.Back_Top_Tab_Pizzeria {
-    display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-    
-    /* border: 1.5px solid black; */
-    /* border-radius: 15px; */
-    margin-right: 19%;
-    height: 60px;
-    width: 300px;
+.Information_Navigation_Bar_Image {
+    height: 54px;
+    width: 56px;
+    background-color: hsl(195, 3%, 71%);
+    /* border: 1px solid #F7F3E3; */
+    border-radius: 50% 50%;
+    margin-left: 8px;
 }
 
-/* ***** Condense into one *****  */
-
-.Back_Top_Tab_View_Review {
-    display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-    
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 25px;
-    height: 50px;
-    width: 140px;
-    margin-left: 1%;
-}
-
-.Back_Top_Tab_Add_Review {
-    display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-    
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 25px;
-    height: 50px;
-    width: 140px;
-    margin-right: 1%;
-}
-
-/* ***** Condense into one ***** */
-
-.Back_Top_Tab_View_Text {
-    font-family: 'Fugaz One', cursive;
-    font-size: 18px;
-
-    color: white;
-    text-decoration: underline;
-    margin-top: 10%;
-    /* margin-left: 6%; */
-    margin-bottom: 8%;
-    margin-left: 6%;
-}
-
-.Back_Top_Tab_Add_Text {
-    font-family: 'Fugaz One', cursive;
-    font-size: 18px;
-
-    color: white;
-    text-decoration: underline;
-    margin-top: 10%;
-    /* margin-left: 6%; */
-    margin-bottom: 8%;
-    margin-left: 9%;
-}
-
-
-.Back_Bottom_Content_Pizzeria {
-    display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-    
-    /* border: 2px solid black; */
-    border-radius: 15px;
-    margin-left: 0.5%;
-    margin-top: 0.5%;
-    height: 520px;
-    width: 775px
-}
-
-.Back_Left_Content_Pizzeria {
-    display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-    
-    border: 2px solid black;
-    /* background-color: hsl(26, 14%, 69%); */
-    /* background-color: hsl(0, 0%, 92%); */
-    background-color: hsl(60, 2%, 78%);
-    border-radius: 15px;
-    margin-left: 0.5%;
-    height: 510px;
-    width: 350px 
-}
-
-/* .Back_Left_Image_Pizzeria {
-    border: 2px solid black;
-    border-radius: 15px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    margin-left: 2%;
-    height: 200px;
-    width: 150px;
-} */
-
-.Back_Left_Image {
-    /* border: 2px solid black; */
-    box-shadow: 1px 2px 5px 1px hsl(40, 8%, 8%) ;
-    border-radius: 5px;
-    margin-top: 2%;
-    /* margin-bottom: 0.5%; */
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 220px;
-    width: 315px;
-}
-
-.Back_Left_Pizzeria_Information {
-    /* border: 2px solid black; */
-    border-radius: 5px;
-    margin-top: 2%;
-    margin-left: 2%;
-    height: 32px;
-    width: 300px;
-}
-
-.Back_Left_Pizzeria_Information_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: black;
-    margin-top: 1%;
-    margin-left: 2%;
-    font-weight: bold;
-    font-style: italic
-}
-
-
-
-.Back_Middle_Button_Pizzeria {
-    border: 1.5px solid white;
-    background-color: black;
-    border-radius: 45px;
-    margin-left: 10%;
-    margin-top: 450px;
-    height: 50px;
-    width: 70px 
-}
-
-.Back_Middle_Button_Text {
-    font-family: 'Fugaz One', cursive;
-    font-size: 20px;
-    color: white;
-    margin-left: 12%;
-    margin-top: 15%;
-}
-
-.Back_Right_Content_Pizzeria {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-    
-    background-color: hsl(60, 2%, 78%);
-    border: 1.5px solid black;
-    border-radius: 15px;
-    margin-left: 2%;
-    height: 510px;
-    width: 350px; 
-    margin-right: 0.5%
-}
-
-.Back_Right_Top_Content {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
-    
-    /* border: 2px solid black; */
-    border-bottom: 1.5px solid black;
-    /* border-radius: 5px; */
-    height: 80px;
-    width: 320px;
-    margin-top: 2% 
-}
-
-.Back-Right_Top_Leave {
-    /* border: 1px solid black; */
-    height: 30px;
-    width: 200px;
-    margin-top: 1%;
-    margin-left: 3%
-}
-
-.Back-Right_Top_Leave_Text {
-    font-family: 'Fugaz One', cursive;
-    font-size: 20px;
-    color: black;
-}
-
-.Back-Right_Top_Email {
-    /* border: 1px solid black; */
-    height: 30px;
-    width: 300px;
-    margin-top: 2%;
-    margin-left: 3%
-}
-
-.Back-Right_Top_Email_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: underline;
-    color: black;
-}
-
-.Back_Right_Middle_Content {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
-    
-    /* border: 2px solid black; */
-    border-bottom: 1.5px solid black;
-    /* border-radius: 5px; */
-    height: 200px;
-    width: 320px;
-    margin-top: 2%
-}
-
-.Back_Right_Middle_Comment {
-    /* border: 1px solid black; */
-    height: 30px;
-    width: 200px;
-    margin-top: -2%;
-    margin-left: 3.5%
-}
-
-.Back_Right_Middle_Comment_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 6%;
-    color: black;
-    
-}
-
-.Back_Right_Middle_Input {
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 120px;
-    width: 300px;
-    margin-top: 1%;
-    margin-left: 3%
-}
-
-.Back_Right_Middle_Button {
+.Information_Navigation_Bar_Bar {
     display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-    align-items: center;
-
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    height: 45px;
-    width: 300px;
-    margin-top: 1%;
-    margin-left: 3%
+	align-items: center;
+    
+    height: 54px;
+    width: 200px;
+    background-color: hsl(195, 3%, 71%);
+    /* border: 0.5px solid #F7F3E3; */
+    border-radius: 10px;
+    margin-left: 112px
 }
 
-.Back_Right_Middle_Update_Delete_Button {
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 15px;
-    height: 30px;
-    width: 65px;
+.Information_Navigation_Bar_Bar_Icon {
+    height: 35px;
+    width: 35px
 }
 
-/* ***** Condense into One ***** */
+.Information_Content {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+    
+    height: 520px;
+    width: 380px;
+    background-color: hsl(36, 32%, 54%);
+    /* border: 0.5px solid #F7F3E3; */
+    border-radius: 10px;
+    margin-top: 4px;
+}
 
-.Back_Right_Middle_Update_Text {
+.Information_Content_Image {
+    background-color: hsl(195, 3%, 71%);
+    /* border: 0.5px solid #F7F3E3;  */
+    border-radius: 10px;;
+    margin: 4px;
+    height: 220px;
+    width: 180px;;
+
+}
+
+.Information_Content_Text_Container {
+    background-color: hsl(195, 3%, 71%);
+    /* border: 1px solid #F7F3E3; */
+    border-radius: 6px;
+    height: 33px;
+    margin: 4px;
+}
+
+.Information_Content_Text {
     font-family: 'Fugaz One', cursive;
-    font-size: 12px;
-    color: white;
-    margin-top: 8%
-}
-
-.Back_Right_Middle_Delete_Text {
-    font-family: 'Fugaz One', cursive;
-    font-size: 12px;
-    color: white;
-    margin-top: 8%
-}
-
-/* ***** Condense into One ***** */
-
-.Back_Right_Bottom_Content {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
-    
-    /* border: 2px solid black; */
-    border-radius: 5px;
-    height: 200px;
-    width: 320px;
-    margin-top: 2% 
-}
-
-.Back_Right-Bottom_Name {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
-    
-    /* border: 2px solid black; */
-    margin-top: 2%;
-    height: 45px;
-}
-
-.Back_Right-Bottom_Email {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
-    
-    /* border: 2px solid black; */
-    margin-top: 2%;
-    height: 45px;
-}
-
-.Back_Right-Bottom_Pizzeria_Name {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
-    
-    /* border: 2px solid black; */
-    margin-top: 2%;
-    height: 45px;
-}
-
-.Back_Right_Bottom_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    margin-left: 4%;
-}
-
-.Back_Right_Bottom_Input_Field {
-    border-radius: 5px;
-    border: 1px solid black;
-    margin-left: 3.5%;
-    margin-top: -2%;
-    width: 300px;
-}
-
-.Back_Right-Bottom_Post_Button {
-    /* border-radius: 5px; */
-    background-color: black;
-    border: 2px solid white;
-    margin-top: 4%;
-    margin-left: 3.5%;
-    width: 300px;
-    height: 30px;
-}
-
-.Back_Right_Bottom_Button_Text {
-    font-family: 'Fugaz One', cursive;
-    font-size: 16px;
-    color: white;
-    /* margin-left: 28%; */
-    margin-top: 0.5%;
+    font-size: 20px;
+    color: hsl(28, 28%, 13%);
+    margin-left: 1%
 }

@@ -1,102 +1,67 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {Link} from "react-router-dom";
+import {getPizzeria} from '../../../ducks/user';
 import './Information.css'
 
 class Information extends Component {
+    constructor(){
+        super()
+
+        this.state = {}
+    };
+
+    componentDidMount(){
+        this.props.getPizzeria()
+    };
+
     render(){
         return(
-            <div className = "Information">
-                <div className = "Back_Pizzeria_Card">
-                    <div className = "Back_Top_Content_Pizzeria">
-                        <div className = "Back_Top_Logo_Pizzeria"></div>
-                        <div className = "Back_Top_Tab_Pizzeria">
+            <div className = "Information" id = {this.props.user.id}>
+                <div className = "Information_Container">
+                    <div className = "Information_Navigation_Bar">
+                        <img src = {this.props.user.logo_image} className = "Information_Navigation_Bar_Image" />
+                        <div className = "Information_Navigation_Bar_Bar">
+
+                            <Link to = "/pizzerias">
+                            <img className = "Information_Navigation_Bar_Bar_Icon" src = "https://image.flaticon.com/icons/svg/831/831515.svg" title = "Go to the Pizzeria Page" />
+                            </Link>
+
+                            <Link to = "/addreview">
+                            <img className = "Information_Navigation_Bar_Bar_Icon" src = "https://image.flaticon.com/icons/svg/1381/1381552.svg" title = "Go to the Add Review Page" />
+                            </Link>
 
                             <Link to = "/viewreview">
-                            <div className = "Back_Top_Tab_View_Review">
-                                <p className = "Back_Top_Tab_View_Text"> View Reviews </p>
-                            </div>
+                            <img className = "Information_Navigation_Bar_Bar_Icon" src = "https://image.flaticon.com/icons/svg/179/179772.svg" title = "Go to the View Reviews Page" />
                             </Link>
-                            <Link to = "/addreview">
-                            <div className = "Back_Top_Tab_Add_Review">
-                                <p className = "Back_Top_Tab_Add_Text"> Add Reviews </p>
-                            </div>
-                            </Link>
+
+                            <img className = "Information_Navigation_Bar_Bar_Icon" src = "https://image.flaticon.com/icons/svg/148/148839.svg" title = "Add Pizzeria to Favorites"/>
+
                         </div>
                     </div>
-                    <div className = "Back_Bottom_Content_Pizzeria">
-                        <div className = "Back_Left_Content_Pizzeria">
-                            <div className = "Back_Left_Image_Pizzeria">
-                            <img class = "Back_Left_Image" src="https://lh5.googleusercontent.com/-Uc7_19OCuyU/USl93I5nIXI/AAAAAAAAHEE/3cfFhbPx7jw/s800/681%2520LPP%252002.JPG" alt="Pizzeria" />
-                            </div>
-                            <div className = "Back_Left_Pizzeria_Information">
-                                <p className = "Back_Left_Pizzeria_Information_Text"> Name: Lupi's Pizza Pies </p>
-                            </div>
-                            <div className = "Back_Left_Pizzeria_Information">
-                                <p className = "Back_Left_Pizzeria_Information_Text"> Address: 406A Broad Street </p>
-                            </div>
-                            <div className = "Back_Left_Pizzeria_Information">
-                                <p className = "Back_Left_Pizzeria_Information_Text"> Zip Code: 37402 </p>
-                            </div>
-                            <div className = "Back_Left_Pizzeria_Information">
-                                <p className = "Back_Left_Pizzeria_Information_Text"> City: Chattanooga </p>
-                            </div>
-                            <div className = "Back_Left_Pizzeria_Information">
-                                <p className = "Back_Left_Pizzeria_Information_Text"> State: Tennessee </p>
-                            </div>
-                            <div className = "Back_Left_Pizzeria_Information">
-                                <p className = "Back_Left_Pizzeria_Information_Text"> Website: https://www.lupi.com/ </p>
-                            </div>
-                            <div className = "Back_Left_Pizzeria_Information">
-                                <p className = "Back_Left_Pizzeria_Information_Text"> Phone Number: (423) 266-5874 </p>
-                            </div>
+                    <div className = "Information_Content">
+                        <img src = {this.props.user.pizzeria_image} className = "Information_Content_Image" />
+                        <div className = "Information_Content_Text_Container" >
+                            <p className = "Information_Content_Text"> Name: {this.props.user.name} </p>
                         </div>
-                        <Link to = "/pizzerias">
-                        <div className = "Back_Middle_Button_Pizzeria">
-                            <p className = "Back_Middle_Button_Text"> Back </p>
+                        <div className = "Information_Content_Text_Container" >
+                            <p className = "Information_Content_Text"> Address: {this.props.user.address} </p>
                         </div>
-                        </Link>
-                        {/* <div className = "Back_Right_Content_Pizzeria"> */}
-                            {/* <div className = "Back_Right_Top_Content">
-                                <div className = "Back-Right_Top_Leave">
-                                    <p className = "Back-Right_Top_Leave_Text"> Leave a Review </p>
-                                </div>
-                                <div className = "Back-Right_Top_Email">
-                                    <p className = "Back-Right_Top_Email_Text"> Your email address will not be published. </p>
-                                </div>
-                            </div> */}
-                            {/* <div className = "Back_Right_Middle_Content">
-                                <div className = "Back_Right_Middle_Comment">
-                                    <p className = "Back_Right_Middle_Comment_Text"> Comment </p>
-                                </div>
-                                <div className = "Back_Right_Middle_Input">
-                                </div>
-                                <div className = "Back_Right_Middle_Button">
-                                    <button className = "Back_Right_Middle_Update_Delete_Button">
-                                        <p className = "Back_Right_Middle_Update_Text"> Update </p>
-                                    </button>
-                                    <button className = "Back_Right_Middle_Update_Delete_Button">
-                                        <p className = "Back_Right_Middle_Delete_Text"> Delete </p>
-                                    </button>
-                                </div>
-                            </div> */}
-                            {/* <div className = "Back_Right_Bottom_Content">
-                                <div className = "Back_Right-Bottom_Name">
-                                    <p className = "Back_Right_Bottom_Text"> Name: </p>
-                                    <input className = "Back_Right_Bottom_Input_Field" type = "text" placeholder = "Type Here"></input>
-                                </div>
-                                <div className = "Back_Right-Bottom_Email">
-                                    <p className = "Back_Right_Bottom_Text"> E-mail: </p>
-                                    <input className = "Back_Right_Bottom_Input_Field" type = "text" placeholder = "Type Here"></input>
-                                </div>
-                                <div className = "Back_Right-Bottom_Pizzeria_Name">
-                                    <p className = "Back_Right_Bottom_Text"> Pizzeria Name: </p>
-                                    <input className = "Back_Right_Bottom_Input_Field" type = "text" placeholder = "Type Here"></input>
-                                </div>
-                                <button className = "Back_Right-Bottom_Post_Button">
-                                    <p className = "Back_Right_Bottom_Button_Text"> Post Comment </p>
-                                </button>
-                            </div> */}
-                        {/* </div> */}
+                        <div className = "Information_Content_Text_Container" >
+                            <p className = "Information_Content_Text"> Zip Code: {this.props.user.zipcode} </p>
+                        </div>
+                        <div className = "Information_Content_Text_Container" >
+                            <p className = "Information_Content_Text"> City: {this.props.user.city} </p>
+                        </div>
+                        <div className = "Information_Content_Text_Container" >
+                            <p className = "Information_Content_Text"> State: {this.props.user.state} </p>
+                        </div>
+                        <div className = "Information_Content_Text_Container" >
+                            <p className = "Information_Content_Text"> Website: {this.props.user.website_url} </p>
+                        </div>
+                        <div className = "Information_Content_Text_Container" >
+                            <p className = "Information_Content_Text"> Phone Number: {this.props.user.phone_number} </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,4 +69,10 @@ class Information extends Component {
     };
 };
 
-export default Information;
+const mapStateToProps = (state) => {
+    return {
+        user: state.pizzeria
+    };
+};
+
+export default connect(mapStateToProps, {getPizzeria: getPizzeria}) (Information);
