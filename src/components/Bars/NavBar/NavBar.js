@@ -5,43 +5,54 @@ import { Link } from "react-router-dom";
 class NavBar extends Component {
     render(){
         return(
-            <div className = "NavBar_Container">
-                <Link to = "/">
-                <div className = "Signage_Navigation">
-                    <div className = "Logo_Navigation">
-                        <img class = "Navigation_Pizza" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" title = "Welcome" height="54" width="62" />
-                    </div>
-                    <div className = "Name_Navigation">
-                        <h3 className = "Logo_Text" title = "Landing"> Snag A Slice </h3>
-                    </div>
+            <div className = "Navigation_Container">
+                <div className = "Navigation_Signage_Container">
+                    <img className = "Navigation_Signage_Image" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" />
+                    <p className = "Navigation_Signage_Text"> Snag A Slice </p>
                 </div>
-                </Link>
-                <div className = "Search_Navigation">
-                    <input class = "Search_Field" type = "text" title = "Search" />
-                    <img class = "Search_Image" src = "https://image.flaticon.com/icons/svg/126/126474.svg" alt = "Magnifing Glass" title = "Search"/>
-                    <img class = "Filter_Image" src = "https://image.flaticon.com/icons/svg/25/25623.svg" alt = "Arrow Down" title = "Filter" />
+                <div className = "Navigation_Search_Container">
+                    <input className = "Navigation_Input_Field" title = "Type Here " placeholder = "Search Here..." />
+                    <button className = "Navigation_Search_Filter_Button" >
+                        <img className = "Navigation_Search_Filter_Icon" src = "https://image.flaticon.com/icons/svg/34/34097.svg" title = "Click Search" />
+                    </button>
+                    <button className = "Navigation_Search_Filter_Button">
+                        <img className = "Navigation_Search_Filter_Icon" src = "https://image.flaticon.com/icons/svg/60/60954.svg" title = "Click Filter" />
+                    </button>
                 </div>
-                <div className = "User_Navigation">
+                <div className = "Navigation_Tab_Container">
+                    
                     <Link to = "/home">
-                    <div className = "Home_Navigation">
-                        <p className = "User_Text" title = "Home" hover> Home </p>
-                    </div>
+                    <p 
+                        className = "Navigation_Tab_Text" 
+                        title = "Go to the Home Page"> Home 
+                    </p>
                     </Link>
+
                     <Link to = "/about">
-                    <div className = "About_Navigation">
-                        <p className = "User_Text" title = "About"> About </p>
-                    </div>
+                    <p 
+                        className = "Navigation_Tab_Text" 
+                        title = "Go to the About Page"> About 
+                    </p>
                     </Link>
+
                     <Link to = "/signup">
-                    <div className = "Signup_Navigation">
-                        <p className = "User_Text" title = "Signup"> Sign up </p>
-                    </div>
+                    <p 
+                        className = "Navigation_Tab_Text" 
+                        title = "Go to the Sign up Page"> Sign Up 
+                    </p>
                     </Link>
-                    <Link to = "/login">
-                    <div className = "Login_Navigation">
-                        <p className = "User_Text" title = "Login"> Login </p>
-                    </div>
+
+                    <Link to = "login">
+                    <p 
+                        className = "Navigation_Tab_Text" 
+                        title = "Go to the Login Page"> Login 
+                    </p>
                     </Link>
+
+                    <button className = "Navigation_Signage_Media_Hamburger_Button">
+                        <img className = "Navigation_Signage_Media_Hamburger" src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="Hamburger" title = "Menu" />
+                    </button>
+
                 </div>
             </div>
             

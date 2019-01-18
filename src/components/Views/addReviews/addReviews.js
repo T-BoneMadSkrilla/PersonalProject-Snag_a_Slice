@@ -23,10 +23,10 @@ class addReviews extends Component {
                         </input>
                         <div className = "addReview_Card_Middle_Buttons">
                             <button className = "addReview_Card_Middle_Buttons_Container">
-                                <p className = "addReview_Card_Middle_Buttons_Text"> Update </p>
+                                <p className = "addReview_Card_Middle_Buttons_Text" title = "Click Here to Update Comment"> Update </p>
                             </button>
                             <button className = "addReview_Card_Middle_Buttons_Container">
-                                <p className = "addReview_Card_Middle_Buttons_Text"> Delete </p>
+                                <p className = "addReview_Card_Middle_Buttons_Text" title = "Click Here to Delete Comment"> Delete </p>
                             </button>
                         </div>
                     </div>
@@ -38,11 +38,11 @@ class addReviews extends Component {
                         <p className = "addReview_Card_Bottom_Text"> Pizzeria Name: </p>
                         <input className = "addReview_Card_Bottom_Input"></input>
                         <button className = "addReview_Card_Bottom_Button">
-                            <p className = "addReview_Card_Bottom_Button_Text"> Post </p>
+                            <p className = "addReview_Card_Bottom_Button_Text" title = "Click Here to Post Your Comment"> Post </p>
                         </button>
                         <Link to = "viewreview">
                         <button className = "addReview_Card_Bottom_Button">
-                            <p className = "addReview_Card_Bottom_Button_Text"> View Reviews </p>
+                            <p className = "addReview_Card_Bottom_Button_Text" title = "Go to View Reviews Page"> View Reviews </p>
                         </button>
                         </Link>
                     </div>

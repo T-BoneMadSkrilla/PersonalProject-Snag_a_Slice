@@ -1,135 +1,122 @@
-.NavBar_Container {
+.Navigation_Container {
+    /* display: none; */
+
     display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
-    
+    align-items: center;
     background-color: #EFE1C8;
-    /* border: 1px solid grey; */
-    height: 10vh;
-    width: auto;
+    
+    height: 60px;
 }
 
-.Signage_Navigation {
+.Navigation_Signage_Container {
+    /* display: none; */
+
     display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+    /* border: 2px solid black; */
+    margin-left: 0.5%;
+    height: 55px;
+    width: 320px;
+}
+
+.Navigation_Signage_Image {
+    height: 50px;
+    width: 50px;
+    margin-top: 2.5px;
+}
+
+.Navigation_Signage_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 25px;
+    color: black;
+    margin-top: 14px;
+    margin-left: 8px;
+}
+
+.Navigation_Search_Container {
+    /* display: none; */
+
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 	align-items: center;
 
-    /* background-color: lightgrey; */
-    /* border: 2px solid black; */
-    height: 70px;
-    width: 242px;
-    text-decoration: none;
-    color: black;
+    border: 1px solid black;
+    /* background-color: #635645; */
+    background-color: hsl(34, 19%, 36%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black;
+    margin-left: 1%;
+    margin-top: 5px;
+    height: 38px;
+    width: 320px;
 }
 
-.Logo_Navigation {
-    /* background-color: lightgrey; */
-    /* border: 2px solid black; */
-    height: 60px;
-    width: 100px;
-    margin-left: 2%;
+.Navigation_Input_Field {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    border-radius: 4px;
+    /* border: none; */
+    margin-left: 5px;
+    width: 180px
 }
 
-.Navigation_Pizza {
-    margin-left: 1px;
-    margin-top: 3px;
-}
-
-.Name_Navigation {
-    /* background-color: lightgrey; */
-    /* border: 2px solid black; */
-    height: 60px;
-    width: 300px;
-    margin-left: 2%;
-}
-
-.Logo_Text {
-    /* font-family: 'Pacifico', cursive; */
-    font-family: 'Fugaz One', cursive;
-    font-size: 24px;
-    line-height: 100%;
-}
-
-.Search_Navigation {
+.Navigation_Search_Filter_Button {
     display: flex;
 	flex-direction: row;
 	justify-content: center;
     align-items: center;
     
-    /* background-color: lightgrey; */
-    /* border: 2px solid black; */
-
-    height: 30px;
-    width: 300px;
-    margin-left: 1%;
-    /* margin-top: 4px; */
-    /* margin-bottom: 4px */
+    height: 22px;
+    width: 28px;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-left: 1.5px
 }
 
-.Search_Image {
-    background-color: white;
-    border: 1px solid black;
-    height: 30px;
-    width: 30px;
+.Navigation_Search_Filter_Icon {
+    height: 15px;
 }
 
-.Filter_Image {
-    background-color: white;
-    border: 1px solid black;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: 30px;
-    width: 32px;
-}
+.Navigation_Tab_Container {
+    /* display: none; */
 
-.Search_Field {
-    -webkit-box-shadow: inset 0 0 5px #000000;
-    border: 1px solid black;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    height: 30px;
-    width: 300px;
-}
-
-.Search_Field_Navigation {
-    height: 5vh;
-    width: 60vw; 
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    text-align: center;
-}
-
-.Search_Button_Navigation {
-    height: 4.8vh;
-    margin-left: -2%
-}
-
-.Filter_Button_Navigation {
-    height: 4.8vh;
-    margin-left: -2%;
-}
-
-.User_Navigation {
     display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-    align-items: center;
-    
-    /* background-color: lightgrey; */
+	align-items: center;
+
     /* border: 2px solid black; */
-    height: 70px;
-    width: 500px;
-    margin-left: 40%;
-    /* margin-right: 0.5%; */
+    margin-left: 1%;
+    height: 55px;
+    width: 40%;
+    margin-left: 35%
+
 }
 
-.User_Text {
-    font-size: 18px;
-    margin-top: 15%;
-    font-weight: 800;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
+.Navigation_Tab_Text {
+    /* display: none; */
+
+    font-family: 'Fugaz One', cursive;
+    font-size: 20px;
+    text-decoration: underline;
     color: black;
+    margin-top: 10px;
+}
+
+.Navigation_Signage_Media_Hamburger_Button {
+    display: none;
+    background-color: #EFE1C8;
+    border: none;
+}
+
+.Navigation_Signage_Media_Hamburger {
+    /* display: none; */
+
+    height: 25px;
 }
