@@ -84,7 +84,7 @@
     background-color: black;
     border: 1px solid white;
     border-radius: 25px;
-    margin-top: 30%
+    margin-top: 20%
 }
 
 .View_Information_Text {
@@ -93,7 +93,7 @@
     font-weight: 500;
     color: white;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: 12px;
 }
 
