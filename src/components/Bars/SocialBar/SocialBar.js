@@ -13,3 +13,4 @@ export default function SocialBar(){
 };
 
 // This component will be consistent throughout the website.
+

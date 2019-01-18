@@ -20,13 +20,14 @@ export default (
             <Route path = "/" exact component = {Landing} />
             <Route path = "/home" component = {Home} />
             <Route path = "/pizzerias" component = {Pizzerias} />
-            <Route path = "/pizzeria/information" component = {Information} />
+            <Route path = "/pizzeria/information/:id" component = {Information} />
             <Route path = "/account" component = {Account} />
             <Route path = "/signup" component = {Signup} />
             <Route path = "/login" component = {Login} />
             <Route path = "/about" component = {About} />
             <Route path = "/addreview" component = {addReviews} />
             <Route path = "/viewreview" component = {viewReviews} />
+
         </Switch>
     </Provider>
 );

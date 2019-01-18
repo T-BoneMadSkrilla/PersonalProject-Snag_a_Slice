@@ -12,11 +12,9 @@ class Home extends Component {
                         <p className = "EditorsChoice_Text"> Editors Choice </p>
                         <p className = "EditorsChoice_Pizzeria_Text"> Lupi's Pizza Pie </p>
                         <p className = "EditorsChoice_Pizzeria_Location_Text"> Chattanooga, Tennessee </p>
-                        <Link to = "/pizzeria/information">
-                        <div className = "EditorsChoice_Pizzeria_ViewInformation_Button">
-                            <p className = "View_Information_Text"> View Information </p>
-                        </div>
-                        </Link>
+                        <a className = "EditorsChoice_Pizzeria_ViewInformation_Button" href = "https://www.lupi.com/" >
+                            <p className = "View_Information_Text"> View Website </p>
+                        </a>
                     </div>
                     <Link to = "/pizzerias">
                     <div className = "Explore_Pizzerias_Container">

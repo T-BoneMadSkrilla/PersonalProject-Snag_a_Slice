@@ -64,7 +64,7 @@ class Pizzerias extends Component {
                                 <br />
                                 <p className = "Front_Middle_Pizzeria_Card_Location_Text"> {this.props.user[this.state.counter].state} </p>
                             </div>
-                            <Link className = "Front_Middle_Pizzeria_Card_Button" to = "/pizzeria/information">
+                            <Link className = "Front_Middle_Pizzeria_Card_Button" to = {`/pizzeria/information/${this.state.counter}`}>
                                 <p className = "Front_Middle_Pizzeria_Card_Button_Text"> View Information </p>
                             </Link>
                         </div>
