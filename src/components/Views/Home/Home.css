@@ -1,135 +1,38 @@
 .Home_Container {
     display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-    align-items: center;
+	justify-content: center;
+    align-items: flex-start;
 
     /* background-image: url("https://thepizzasnob.files.wordpress.com/2014/12/five-points-slice-shop-sign-resize.jpg"); */
-    background-image: url("https://static1.squarespace.com/static/573b81c17c65e4fc649295bf/5745c89e859fd00ec4cdb19c/5745c8b82fe131681140ff05/1464717075607/160401+Cambridge+Square+Riverstreet-0049.jpg?format=750w");
+    background-image: url("http://nashvilleguru.com/officialwebsite/wp-content/uploads/2017/08/Five-Points-Pizza-East-Nashville-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1540px 640px;
+    background-size: 1600px 700px;
 
     background-color: ghostwhite;
     /* border: 2px solid black; */
-    height: 638px;
+    height: 654px;
     width: auto;
 
 }
 
-.Header_Container {
-    display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: stretch;     
+@media only screen and (max-width: 800px) {
+    .Home_Container {
+        width: 100vw;
+        background-size: 800px 700px;
+    }
 }
 
-.EditorsChoice_Container {
-    display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-    
-    height: 315px;
-    width: 400px;
-    border: 2px solid white;
-    border-radius: 25px;
-    margin-left: 8%;
-    margin-top: -5%;
-    
-    background: rgba(255,255,255, .5)
-    
-}
-
-.EditorsChoice_Text {
-    font-family: 'Fugaz One', cursive;
-    font-size: 45px;
-    text-shadow: 0 0 10px whitesmoke;
-    -webkit-text-stroke: 0.2px whitesmoke;
-    text-decoration: underline;
-    /* color: whitesmoke; */
-    /* color: hsl(0, 0%, 19%); */
-    color: black;
-    margin-top: 4%
-
-}
-
-.EditorsChoice_Pizzeria_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    font-weight: bold;
-    /* text-shadow:  0 0 15px white; */
-    /* text-shadow:  0 0 15px yellow; */
-    /* text-decoration: underline; */
-    -webkit-text-stroke: 0  1px black;
-    /* color: hsl(0, 0%, 19%); */
-    /* color: rgb(238, 118, 13); */
-    /* color: gold */
-    color: black
-}
-
-.EditorsChoice_Pizzeria_Location_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: bold;
-    /* text-shadow:  0 0 15px white; */
-    /* text-shadow:  0 0 15px yellow; */
-
-    color: black;
-}
-
-.EditorsChoice_Pizzeria_ViewInformation_Button {
-    height: 50px;
-    width: 170px;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 25px;
-    margin-top: 20%
-}
-
-.View_Information_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    margin-left: 40px;
-    margin-top: 12px;
-}
-
-.Explore_Pizzerias_Container {
-    display: flex;
-	flex-direction: row;
-	justify-content: center;
-    align-items: center;
-
-    
-    height: 50px;
-    width: 170px;
-    border: 1px solid white;
-    border-radius: 25px;
-    margin-left: 160%;
-    margin-top: 280%;
-    /* margin-top: 500%; */
-    background-color: black;
-}
-
-
-.Explore_Pizzeria_Text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    margin-top: 6%;
-    margin-right: 1%
+@media only screen and (max-width: 492px) {
+    .Home_Container {
+        width: 110vw;
+        background-size: 600px 700px;
+    }
 }
 
 
 
-.Explore_Pizza {
-    margin-bottom: 1%
-}
 
 
 
