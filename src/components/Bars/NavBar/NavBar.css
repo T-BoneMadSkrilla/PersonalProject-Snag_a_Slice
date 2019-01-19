@@ -113,10 +113,95 @@
     display: none;
     background-color: #EFE1C8;
     border: none;
+    margin-right: 1%
 }
 
 .Navigation_Signage_Media_Hamburger {
-    /* display: none; */
+    display: none;
 
     height: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .Navigation_Container {
+        width: 99vw;
+    }
+    .Navigation_Signage_Container {
+        width: 750px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Navigation_Container {
+        width: 100vw;
+    }
+    .Navigation_Signage_Container {
+        width: 750px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Navigation_Container {
+        width: 124vw;
+    }
+    .Navigation_Signage_Container {
+        width: 750px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
 }

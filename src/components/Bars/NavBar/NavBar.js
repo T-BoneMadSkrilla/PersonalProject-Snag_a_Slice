@@ -49,11 +49,11 @@ class NavBar extends Component {
                     </p>
                     </Link>
 
-                    <button className = "Navigation_Signage_Media_Hamburger_Button">
-                        <img className = "Navigation_Signage_Media_Hamburger" src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="Hamburger" title = "Menu" />
-                    </button>
 
                 </div>
+                <button className = "Navigation_Signage_Media_Hamburger_Button">
+                    <img className = "Navigation_Signage_Media_Hamburger" src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="Hamburger" title = "Menu" />
+                </button>
             </div>
             
         )
