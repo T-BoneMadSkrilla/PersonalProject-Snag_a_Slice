@@ -64,3 +64,133 @@
     margin-right: 1%;
     margin-bottom: 0.4%    
 }
+
+@media only screen and (max-width: 1051px) {
+    .SocialBar_Container {
+        width: 100vw;
+    }
+
+    .Facebook_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Twitter_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Instagram_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .SnapChat_Social {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .SocialBar_Container {
+        width: 100vw;
+    }
+
+    .Facebook_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Twitter_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Instagram_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .SnapChat_Social {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .SocialBar_Container {
+        width: 100vw;
+    }
+
+    .Facebook_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Twitter_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Instagram_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .SnapChat_Social {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 493px) {
+    .SocialBar_Container {
+        width: 110vw;
+    }
+
+    .Facebook_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Twitter_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Instagram_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .SnapChat_Social {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .SocialBar_Container {
+        width: 124vw;
+    }
+
+    .Facebook_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Twitter_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .Instagram_Social {
+        height: 20px;
+        width: 20px;
+    }
+
+    .SnapChat_Social {
+        height: 20px;
+        width: 20px;
+    }
+}

@@ -84,3 +84,23 @@
     text-align: center;
     color: white;
 }
+
+@media only screen and (max-width: 492px) {
+    .Landing_Container {
+        width: 110vw;
+    }
+    .Welcome_Text {
+        margin-left: 10%;
+        font-size: 85px; 
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Landing_Container {
+        width: 120%;
+    }
+    .Welcome_Text {
+        margin-left: 10%;
+        font-size: 85px; 
+    }
+}
