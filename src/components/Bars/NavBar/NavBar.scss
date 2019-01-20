@@ -1,0 +1,263 @@
+.Navigation_Container {
+    /* display: none; */
+
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+    align-items: center;
+    background-color: #EFE1C8;
+    
+    height: 60px;
+}
+
+.Navigation_Signage_Container {
+    /* display: none; */
+
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+    /* border: 2px solid black; */
+    margin-left: 0.5%;
+    height: 55px;
+    width: 320px;
+}
+
+.Navigation_Signage_Image {
+    height: 50px;
+    width: 50px;
+    margin-top: 2.5px;
+}
+
+.Navigation_Signage_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 25px;
+    color: black;
+    margin-top: 14px;
+    margin-left: 8px;
+}
+
+.Navigation_Search_Container {
+    /* display: none; */
+
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+    border: 1px solid black;
+    /* background-color: #635645; */
+    background-color: hsl(34, 19%, 36%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black;
+    margin-left: 1%;
+    margin-top: 5px;
+    height: 38px;
+    width: 328px;
+}
+
+.Navigation_Input_Field {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    border-radius: 4px;
+    /* border: none; */
+    margin-left: 5px;
+    width: 180px
+}
+
+.Navigation_Search_Filter_Button {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    
+    height: 22px;
+    width: 28px;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-left: 3px
+}
+
+.Navigation_Search_Filter_Icon {
+    height: 15px;
+}
+
+.Navigation_Tab_Container {
+    /* display: none; */
+
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+    /* border: 2px solid black; */
+    margin-left: 1%;
+    height: 55px;
+    width: 40%;
+    margin-left: 35%
+
+}
+
+.Navigation_Tab_Text {
+    /* display: none; */
+
+    font-family: 'Fugaz One', cursive;
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+    margin-top: 10px;
+}
+
+.Navigation_Signage_Media_Hamburger_Button {
+    display: none;
+    background-color: #EFE1C8;
+    border: none;
+    margin-right: 1%
+}
+
+.Navigation_Signage_Media_Hamburger {
+    display: none;
+
+    height: 25px;
+}
+
+@media only screen and (max-width: 1051px) {
+    .Navigation_Container {
+        width: 100vw;
+    }
+    .Navigation_Signage_Container {
+        width: 1000px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Navigation_Container {
+        width: 100vw;
+    }
+    .Navigation_Signage_Container {
+        width: 750px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Navigation_Container {
+        width: 100vw;
+    }
+    .Navigation_Signage_Container {
+        width: 750px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .Navigation_Container {
+        width: 110vw;
+    }
+    .Navigation_Signage_Container {
+        width: 750px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Navigation_Container {
+        width: 124vw;
+    }
+    .Navigation_Signage_Container {
+        width: 750px;
+    }
+    .Navigation_Signage_Text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .Navigation_Search_Container {
+        display: none;
+    }
+    .Navigation_Tab_Container {
+        display: none;
+    }
+    .Navigation_Signage_Text {
+        /* display: none; */
+    }
+    .Navigation_Signage_Media_Hamburger {
+        display: block;
+    }
+    .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import './SocialBar.css';
+// import './SocialBar.css';
+import './SocialBar.scss';
 
 export default function SocialBar(){
     return(
