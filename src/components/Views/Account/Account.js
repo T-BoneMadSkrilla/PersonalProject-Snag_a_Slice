@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getUser } from "../../../ducks/user";
-import './Account.css';
+// import './Account.css';
+import './Account.scss';
 
 class Account extends Component {
   componentDidMount() {
