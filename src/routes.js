@@ -27,7 +27,6 @@ export default (
             <Route path = "/about" component = {About} />
             <Route path = "/addreview" component = {addReviews} />
             <Route path = "/viewreview" component = {viewReviews} />
-
         </Switch>
     </Provider>
 );
