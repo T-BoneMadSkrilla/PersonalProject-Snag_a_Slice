@@ -21,7 +21,7 @@
     /* border: 2px solid black; */
     margin-left: 0.5%;
     height: 55px;
-    width: 320px;
+    width: 350px;
 }
 
 .Navigation_Signage_Image {
@@ -118,8 +118,18 @@
 
 .Navigation_Signage_Media_Hamburger {
     display: none;
-
     height: 25px;
+}
+
+.Navigation_Signage_Media_Title {
+    display: none;
+}
+
+.Navigation_Signage_Media_Title_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 20px;
+    color: black;
+    margin-top: 25%
 }
 
 @media only screen and (max-width: 1051px) {
@@ -127,6 +137,7 @@
         width: 100vw;
     }
     .Navigation_Signage_Container {
+        display: none;
         width: 1000px;
     }
     .Navigation_Signage_Text {
@@ -148,6 +159,12 @@
     .Navigation_Signage_Media_Hamburger_Button {
         display: block;
     }
+    .Navigation_Signage_Media_Title {
+        display: block;
+    }
+    .Navigation_Signage_Text {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -155,6 +172,7 @@
         width: 100vw;
     }
     .Navigation_Signage_Container {
+        display: none;
         width: 750px;
     }
     .Navigation_Signage_Text {
@@ -174,6 +192,12 @@
         display: block;
     }
     .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+    .Navigation_Signage_Media_Title {
+        display: block;
+    }
+    .Navigation_Signage_Text {
         display: block;
     }
 }
@@ -183,6 +207,7 @@
         width: 100vw;
     }
     .Navigation_Signage_Container {
+        display: none;
         width: 750px;
     }
     .Navigation_Signage_Text {
@@ -202,6 +227,12 @@
         display: block;
     }
     .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+    .Navigation_Signage_Media_Title {
+        display: block;
+    }
+    .Navigation_Signage_Text {
         display: block;
     }
 }
@@ -211,6 +242,7 @@
         width: 110vw;
     }
     .Navigation_Signage_Container {
+        display: none;
         width: 750px;
     }
     .Navigation_Signage_Text {
@@ -230,6 +262,12 @@
         display: block;
     }
     .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+    .Navigation_Signage_Media_Title {
+        display: block;
+    }
+    .Navigation_Signage_Text {
         display: block;
     }
 }
@@ -239,6 +277,7 @@
         width: 124vw;
     }
     .Navigation_Signage_Container {
+        display: none;
         width: 750px;
     }
     .Navigation_Signage_Text {
@@ -258,6 +297,12 @@
         display: block;
     }
     .Navigation_Signage_Media_Hamburger_Button {
+        display: block;
+    }
+    .Navigation_Signage_Media_Title {
+        display: block;
+    }
+    .Navigation_Signage_Text {
         display: block;
     }
 }

@@ -7,6 +7,12 @@ class NavBar extends Component {
     render(){
         return(
             <div className = "Navigation_Container">
+                <button className = "Navigation_Signage_Media_Hamburger_Button">
+                    <img className = "Navigation_Signage_Media_Hamburger" src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="Hamburger" title = "Menu" />
+                </button>
+                <div className = "Navigation_Signage_Media_Title">
+                    <p className = "Navigation_Signage_Media_Title_Text"> Menu</p>
+                </div>
                 <div className = "Navigation_Signage_Container">
                     <img className = "Navigation_Signage_Image" src="https://image.flaticon.com/icons/svg/1404/1404945.svg" alt="Pizza Pie" />
                     <p className = "Navigation_Signage_Text"> Snag A Slice </p>
@@ -52,9 +58,9 @@ class NavBar extends Component {
 
 
                 </div>
-                <button className = "Navigation_Signage_Media_Hamburger_Button">
+                {/* <button className = "Navigation_Signage_Media_Hamburger_Button">
                     <img className = "Navigation_Signage_Media_Hamburger" src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="Hamburger" title = "Menu" />
-                </button>
+                </button> */}
             </div>
             
         )
