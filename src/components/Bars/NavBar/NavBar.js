@@ -7,9 +7,6 @@ class NavBar extends Component {
     render(){
         return(
             <div className = "Navigation_Container">
-                <button className = "Navigation_Signage_Media_Hamburger_Button">
-                    <img className = "Navigation_Signage_Media_Hamburger" src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="Hamburger" title = "Menu" />
-                </button>
                 <div className = "Navigation_Signage_Media_Title">
                     <p className = "Navigation_Signage_Media_Title_Text"> Menu</p>
                 </div>
@@ -55,12 +52,7 @@ class NavBar extends Component {
                         title = "Go to the Login Page"> Login 
                     </p>
                     </Link>
-
-
                 </div>
-                {/* <button className = "Navigation_Signage_Media_Hamburger_Button">
-                    <img className = "Navigation_Signage_Media_Hamburger" src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="Hamburger" title = "Menu" />
-                </button> */}
             </div>
             
         )
@@ -68,10 +60,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
-// This component will be consistent throughout the website.
-//  <div className = "Search_Navigation">
-//     <input class = "Search_Field_Navigation" type = "text" placeholder = "Search Here" />
-//     <button class = "Filter_Button_Navigation"><img src="https://image.flaticon.com/icons/svg/32/32195.svg" alt="Arrow Down" title = "Filter" height="10" width="20"></img></button>
-//     <button class = "Search_Button_Navigation"><img src="https://image.flaticon.com/icons/svg/149/149852.svg" alt="Search" title = "Search" height="10" width="20"></img></button> */}
-// </div> 

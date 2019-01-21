@@ -15,12 +15,8 @@ class Home extends Component {
                         <p className = "Home_Restaurant_Content_Top_Text"> Five Points Pizza </p>
                     </div>
                     <div className = "Home_Editor_Content_Bottom">
-                        <p className = "Home_Location_Content_Bottom_Text"> Address: 1012 Woodland St</p>
-                        <p className = "Home_Location_Content_Bottom_Text"> City: Nashville </p>
-                        <p className = "Home_Location_Content_Bottom_Text"> State: Tennessee </p>
-                        <p className = "Home_Location_Content_Bottom_Text"> Zip Code: 37206 </p>
-                        <p className = "Home_Location_Content_Bottom_Text"> Phone: (615) 915-4174 </p>
-                        <p className = "Home_Location_Content_Bottom_Text"> Website: fivepointspizza.com </p>
+                        <p className = "Home_Location_Content_Bottom_Text"> Nashville, Tennessee</p>
+                        <a className = "Home_Location_Content_Bottom_Text" href = "https://fivepointspizza.com/"> fivepointspizza.com </a>
                     </div>
                 </div>
                 <div className = "Home_Content_Container">

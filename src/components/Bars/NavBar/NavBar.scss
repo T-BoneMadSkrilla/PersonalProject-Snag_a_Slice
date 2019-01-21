@@ -109,13 +109,6 @@
     margin-top: 10px;
 }
 
-.Navigation_Signage_Media_Hamburger_Button {
-    display: none;
-    background-color: #EFE1C8;
-    border: none;
-    margin-right: 1%
-}
-
 .Navigation_Signage_Media_Hamburger {
     display: none;
     height: 25px;
@@ -134,6 +127,7 @@
 
 @media only screen and (max-width: 1051px) {
     .Navigation_Container {
+        display: none;
         width: 100vw;
     }
     .Navigation_Signage_Container {
@@ -167,8 +161,16 @@
     }
 }
 
+@media only screen and (max-width: 1138px) {
+    .Navigation_Container {
+        display: none;
+        width: 100vw;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .Navigation_Container {
+        display: none;
         width: 100vw;
     }
     .Navigation_Signage_Container {
@@ -204,6 +206,7 @@
 
 @media only screen and (max-width: 600px) {
     .Navigation_Container {
+        display: none;
         width: 100vw;
     }
     .Navigation_Signage_Container {
@@ -237,8 +240,9 @@
     }
 }
 
-@media only screen and (max-width: 492px) {
+@media only screen and (max-width: 494px) {
     .Navigation_Container {
+        display: none;
         width: 110vw;
     }
     .Navigation_Signage_Container {
@@ -274,6 +278,7 @@
 
 @media only screen and (max-width: 400px) {
     .Navigation_Container {
+        display: none;
         width: 124vw;
     }
     .Navigation_Signage_Container {
