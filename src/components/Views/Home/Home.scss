@@ -1,8 +1,8 @@
 .Home_Container {
     display: flex;
 	flex-direction: row;
-	justify-content: center;
-    align-items: flex-start;
+	justify-content: space-around;
+    align-items: center;
 
     /* background-image: url("https://thepizzasnob.files.wordpress.com/2014/12/five-points-slice-shop-sign-resize.jpg"); */
     background-image: url("http://nashvilleguru.com/officialwebsite/wp-content/uploads/2017/08/Five-Points-Pizza-East-Nashville-1.jpg");
@@ -14,4 +14,193 @@
     /* border: 2px solid black; */
     height: 654px;
     width: auto;
+}
+
+.Home_Editor_Content_Container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+    
+    // background-color: white;
+    // border: 2px solid black;
+    border-radius: 25px;
+    height: 625px;
+    width: 400px;
+}
+
+.Home_Editor_Content-top {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.Home_Editor_Content_Top_Text {
+    width: 500px;
+    font-family: 'Fugaz One', cursive;
+    font-size: 36px;
+    // color: black;
+    // color: red;
+    color: hsl(356, 72%, 46%);
+    text-shadow: 1px 1px white;
+    margin-top: 10%;
+    margin-left: 8.5%
+}
+
+.Home_Restaurant_Content_Top_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 25px;
+    color: hsl(356, 72%, 46%);
+    text-shadow: 1px 1px white;
+    margin-left: 25%
+}
+
+.Home_Editor_Content_Bottom {
+    margin-top: 50%;
+}
+
+.Home_Location_Content_Bottom_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 18px;
+    color: #ECC381;
+    // text-shadow: 1px 1px white;
+
+}
+
+.Home_Content_Container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+    
+    // background-color: white;
+    // border: 2px solid black;
+    border-radius: 25px;
+    height: 625px;
+    width: 400px;
+}
+
+.Home_Social_Content_Container {
+    // background-color: white;
+    // border: 2px solid black;
+    border-radius: 25px;
+    height: 625px;
+    width: 400px;
+}
+
+.Home_Social_Container {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+}
+
+.Home_Content_Middle_Title_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    margin-left: 22%;
+    margin-top: 40%
+}
+
+.Home_Content_Middle_Search_Container {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 60px;
+    width: 350px;
+    margin-top: 5%
+}
+
+.Home_Content_Middle_Input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 30px;
+    width: 265px;
+}
+
+.Home_Content_Middle_Search_Button {
+    // border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%
+}
+
+.Home_Content_Middle_Filter_Button {
+    // border: 2px solid white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%
+}
+
+.Home_Content_Middle_Search_Filter_Icon {
+    height: 15px;
+    margin-bottom: 6%
+}
+
+.Home_Content_Bottom_Button {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 50px;
+    width: 140px;
+    margin-top: 10%
+}
+
+.Home_Content_Bottom_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 14px;
+    color: white;
+    margin-top: 9%;
+    margin-left: 4.5%
+}
+
+.Home_Twitter_Container {
+    // border: 2px solid black;
+    // border-radius: 25px;
+    box-shadow: 8px 6px 8px black;
+    height: 600px;
+    width: 250px;
+    margin-top: 2%;
+    margin-left: 50%
+}
+
+@media only screen and (max-width: 800px) {
+    .Home_Editor_Content_Container {
+        display: none;
+    }
+    .Home_Social_Content_Container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Home_Editor_Content_Container {
+        display: none;
+    }
+    .Home_Social_Content_Container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Home_Container {
+        width: 500px;
+    }
+    .Home_Editor_Content_Container {
+        display: none;
+    }
+    .Home_Social_Content_Container {
+        display: none;
+    }
 }
