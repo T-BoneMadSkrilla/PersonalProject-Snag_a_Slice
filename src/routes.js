@@ -18,15 +18,15 @@ export default (
     <Provider store = {store}>
         <Switch>
             <Route path = "/" exact component = {Landing} />
-            <Route path = "/home" component = {Home} />
-            <Route path = "/pizzerias" component = {Pizzerias} />
+            <Route path = "/Home" component = {Home} />
+            <Route path = "/Pizzerias" component = {Pizzerias} />
             <Route path = "/pizzeria/information/:id" component = {Information} />
-            <Route path = "/account" component = {Account} />
-            <Route path = "/signup" component = {Signup} />
-            <Route path = "/login" component = {Login} />
-            <Route path = "/about" component = {About} />
-            <Route path = "/addreview" component = {addReviews} />
-            <Route path = "/viewreview" component = {viewReviews} />
+            <Route path = "/Account" component = {Account} />
+            <Route path = "/Signup" component = {Signup} />
+            <Route path = "/Login" component = {Login} />
+            <Route path = "/About" component = {About} />
+            <Route path = "/Addreview" component = {addReviews} />
+            <Route path = "/Viewreview" component = {viewReviews} />
         </Switch>
     </Provider>
 );
