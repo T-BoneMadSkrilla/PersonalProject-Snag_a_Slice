@@ -1,0 +1,58 @@
+.About {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    
+    background-image: url("https://images.homedepot-static.com/productImages/b2ee0ac2-0381-44fd-9770-da63db8a804c/svn/various-wood-tones-reclaimed-wood-barn-wood-boards-27862-64_1000.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1540px 680px;
+    /* background-color:  hsl(10, 9%, 52%); */
+    /* border: 2px solid black; */
+    height: 656px;
+}
+
+.About_Container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    align-items: center;
+    
+    background-color: #EFE1C8;
+    /* border: 2px solid white; */
+    box-shadow: 8px 8px 8px black;
+    height: 600px;
+    width: 400px;
+}
+
+.About_Title {
+    border-bottom: 2px solid black;
+    height: 100px;
+    width: 300px;
+}
+
+.About_Title_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 35px;
+    color: black;
+    margin-left: 32%;
+    margin-top: 15%
+}
+
+.About_Paragraph {
+    /* border: 2px solid black; */
+    width: 300px;
+    height: 450px;
+    margin-top: 10%
+}
+
+.About_Paragraph_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.About_Quote_Text {
+    font-style: italic;
+    font-size: 18px
+}
