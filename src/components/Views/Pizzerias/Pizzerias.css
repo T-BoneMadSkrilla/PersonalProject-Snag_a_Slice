@@ -262,3 +262,19 @@
     margin-top: 33%;
 
 }
+
+.error_page {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    
+    background-color: lightgray;
+}
+
+.Error_Page_Image {
+    height:652px;
+    width:700px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}

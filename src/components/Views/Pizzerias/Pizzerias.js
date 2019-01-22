@@ -88,7 +88,9 @@ class Pizzerias extends Component {
                     </button>
                 </div>
 
-                : <h1>None found</h1>
+                : <div className = "error_page">
+                    <img className = "Error_Page_Image" src = "https://cdn-images-1.medium.com/max/1600/1*VYPlqLaosLszAtKlx5fHzg.jpeg" />
+                </div>
                 
             )
         
