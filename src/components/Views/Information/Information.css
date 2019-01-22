@@ -2,16 +2,16 @@
     display: flex;
 	flex-direction: row;
 	justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
     background-image: url("https://images.homedepot-static.com/productImages/b2ee0ac2-0381-44fd-9770-da63db8a804c/svn/various-wood-tones-reclaimed-wood-barn-wood-boards-27862-64_1000.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1540px 653px;
+    background-size: 1550px 1500px;
     /* background-color:  hsl(10, 9%, 52%); */
     /* border: 2px solid black; */
     /* height: 650px; */
-    height: 653px;
+    height: 1420px;
 }
 
 .Information_Container {
@@ -20,97 +20,105 @@
 	justify-content: flex-start;
 	align-items: center;
     
-    background-color: hsl(11, 88%, 23%);
-    /* background-color: #B3B6B7; */
-    /* background-color: #AF9164; */
-    /* background-color: #EFE1C8; */
-    /* border: 2px solid white; */
-    box-shadow: 2px 2px 8px black;
-    /* border: 1px solid #F7F3E3; */
-    border-radius: 10px;
-    height: 600px;
-    width: 400px;
+    background-color: #B4A390;
+    border: 10px solid #64080F;
+    border-radius: 25px;
+    height: 1380px;
+    width: 1000px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-.Information_Navigation_Bar {
-    display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-    
-    height: 60px;
-    width: 380px;
-    background-color: hsl(36, 32%, 54%);
-    /* border: 0.5px solid #F7F3E3; */
-    border-radius: 10px;
-    margin-top: 6px;
-}
-
-.Information_Navigation_Bar_Image {
-    height: 54px;
-    width: 56px;
-    background-color: hsl(195, 3%, 71%);
-    /* border: 1px solid #F7F3E3; */
-    border-radius: 50% 50%;
-    margin-left: 8px;
-}
-
-.Information_Navigation_Bar_Bar {
-    display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-    
-    height: 54px;
-    width: 200px;
-    background-color: hsl(195, 3%, 71%);
-    /* border: 0.5px solid #F7F3E3; */
-    border-radius: 10px;
-    margin-left: 112px
-}
-
-.Information_Navigation_Bar_Bar_Icon {
-    height: 35px;
-    width: 35px
-}
-
-.Information_Content {
+.Information_Container_Top {
     display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: stretch;
+	align-items: center;
     
-    height: 520px;
-    width: 380px;
-    background-color: hsl(36, 32%, 54%);
-    /* border: 0.5px solid #F7F3E3; */
-    border-radius: 10px;
-    margin-top: 4px;
+    background-color: #EFE1C9;
+    border: 3px solid #64080F;
+    border-radius: 25px;
+    height: 605px;
+    width: 900px;
+    margin-top: 2%;
 }
 
-.Information_Content_Image {
-    background-color: hsl(195, 3%, 71%);
-    /* border: 0.5px solid #F7F3E3;  */
-    border-radius: 10px;;
-    margin: 4px;
-    margin-left: 95px;
-    height: 200px;
-    width: 180px;;
+.Information_Container_Top_Top {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+    
+    border-bottom: 3px solid #64080F;
+    height: 285px;
+    width: 850px;
+    margin-top: 1%
+}
+
+.Information_Container_Top_Top_Title {
+    /* border: 3px solid #64080F; */
+    height: 50px;
+    width: 350px;
+    margin-top: 0.5%;
 
 }
 
-.Information_Content_Text_Container {
-    background-color: hsl(195, 3%, 71%);
-    /* border: 1px solid #F7F3E3; */
-    border-radius: 6px;
-    height: 30px;
-    margin: 4px;
-    margin-top: 16px;
-}
-
-.Information_Content_Text {
+.Information_Container_Top_Top_Title_Text {
     font-family: 'Fugaz One', cursive;
-    font-size: 18px;
-    color: hsl(28, 28%, 13%);
-    margin-left: 1%
+    font-size: 30px;
+    color: black;
+    margin-top: 1%
+}
+
+.Information_Container_Top_Top_Content {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    
+    /* border: 3px solid #64080F; */
+    height: 215px;
+    width: 850px;
+    margin-top: 0.5%;
+}
+
+.Information_Container_Top_Top_Image {
+    border: 2px solid #64080F;
+    height: 220px;
+    width: 150px
+}
+
+.Information_Container_Top_Top_Rating {
+    background-color: black;
+    border: 2px solid #64080F;
+    height: 100px;
+    width: 100px;
+    margin-top: 14%
+}
+
+.Information_Container_Top_Top_Rating_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 55px;
+    color: white;
+    margin-top: 15%;
+    margin-left: 30%
+}
+
+
+.Information_Container_Top_Bottom {
+    border: 3px solid #64080F;
+    height: 285px;
+    width: 850px;
+    margin-top: 1%
+}
+
+.Information_Container_Bottom {
+    background-color: #EFE1C9;    
+    border: 3px solid #64080F;
+    border-radius: 25px;
+    height: 700px;
+    width: 900px;
+    margin-top: 2%;
+    margin-bottom: 2%
+
 }

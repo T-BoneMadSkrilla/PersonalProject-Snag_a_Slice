@@ -30,6 +30,12 @@ app.get("/auth/user", authController.user);
 // Pizzerias Endpoints
 app.get("/pizzerias/all", pizzeriaController.getPizzerias);
 
+// Pizza Review Endpoints
+app.get("/pizzeria/getReview")
+app.post("/pizzeria/postReview")
+app.put("/pizzeria/updateReview")
+app.delete("/pizzeria/deleteReview")
+
 app.listen(process.env.EXPRESS_PORT || 3056, () => {
     console.log(`Listening on ${process.env.EXPRESS_PORT}`);
 });
