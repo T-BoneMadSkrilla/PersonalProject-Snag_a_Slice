@@ -33,7 +33,19 @@ class Information extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className = "Information_Container_Top_Bottom"></div>
+                        <div className = "Information_Container_Top_Bottom">
+                            <div className = "Information_Container_Top_Bottom_Left">
+                                <p className = "Information_Container_Top_Bottom_Text"> Address: {this.props.user[+this.props.match.params.id].address} </p>
+                                <p className = "Information_Container_Top_Bottom_Text"> Zipcode: {this.props.user[+this.props.match.params.id].zipcode} </p>
+                                <p className = "Information_Container_Top_Bottom_Text"> City: {this.props.user[+this.props.match.params.id].city} </p>
+                                <p className = "Information_Container_Top_Bottom_Text"> State: {this.props.user[+this.props.match.params.id].state} </p>
+                            </div>
+                            <div className = "Information_Container_Top_Bottom_Middle"></div>
+                            <div className = "Information_Container_Top_Bottom_Right">
+                                <p className = "Information_Container_Top_Bottom_Bottom_Text" > Phone Number: {this.props.user[+this.props.match.params.id].phone_number} </p>
+                                <p className = "Information_Container_Top_Bottom_Bottom_Text" > Website: {this.props.user[+this.props.match.params.id].website_url} </p>
+                            </div>
+                        </div>
                     </div>
                     <div className = "Information_Container_Bottom"></div>
                 </div>
