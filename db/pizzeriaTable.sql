@@ -11,5 +11,6 @@ website_url text,
 phone_number integer,
 logo_image varchar (200),
 pizzeria_image varchar (200),
-pizza_image varchar (200)
+pizza_image varchar (200),
+pizzeria_review varchar(500)
 );

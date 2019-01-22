@@ -4,4 +4,4 @@ SELECT * FROM pizzeria WHERE state = 'Tennessee';
 
 SELECT * FROM pizzeria WHERE state = 'Georgia';
 
-SELECT * FROM pizzeria WHERE state = 'Louisiana';
+SELECT * FROM pizzeria WHERE state = 'Texas';
