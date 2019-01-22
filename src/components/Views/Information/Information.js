@@ -24,15 +24,15 @@ class Information extends Component {
                         <img src = {this.props.user[+this.props.match.params.id].logo_image} className = "Information_Navigation_Bar_Image" />
                         <div className = "Information_Navigation_Bar_Bar">
 
-                            <Link to = "/pizzerias">
+                            <Link to = "/Pizzerias">
                             <img className = "Information_Navigation_Bar_Bar_Icon" src = "https://image.flaticon.com/icons/svg/831/831515.svg" title = "Go to the Pizzeria Page" />
                             </Link>
 
-                            <Link to = "/addreview">
+                            <Link to = "/Addreview">
                             <img className = "Information_Navigation_Bar_Bar_Icon" src = "https://image.flaticon.com/icons/svg/1381/1381552.svg" title = "Go to the Add Review Page" />
                             </Link>
 
-                            <Link to = "/viewreview">
+                            <Link to = "/Viewreview">
                             <img className = "Information_Navigation_Bar_Bar_Icon" src = "https://image.flaticon.com/icons/svg/179/179772.svg" title = "Go to the View Reviews Page" />
                             </Link>
 

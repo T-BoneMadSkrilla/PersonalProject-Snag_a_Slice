@@ -18,12 +18,12 @@ class viewReviews extends Component {
                     <div className = "viewReview_Card_Middle_Field"></div>
                  </div>
                  <div className = "viewReview_Card_Bottom">
-                    <Link to = "/addreview">
+                    <Link to = "/Addreview">
                     <div className = "viewReview_Card_Bottom_Button" title = "Go to Add Review Page">
                         <p className = "viewReview_Card_Bottom_Button_Add_Text"> Add Review </p>
                     </div>
                     </Link>
-                    <Link to = "/pizzerias">
+                    <Link to = "/Pizzerias">
                     <div className = "viewReview_Card_Bottom_Button" title = "Go to Pizzerias Page">
                         <p className = "viewReview_Card_Bottom_Button_Restaurant_Text"> Pizzerias </p>
                     </div>

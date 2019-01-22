@@ -40,7 +40,7 @@ class addReviews extends Component {
                         <button className = "addReview_Card_Bottom_Button">
                             <p className = "addReview_Card_Bottom_Button_Text" title = "Click Here to Post Your Comment"> Post </p>
                         </button>
-                        <Link to = "viewreview">
+                        <Link to = "Viewreview">
                         <button className = "addReview_Card_Bottom_Button">
                             <p className = "addReview_Card_Bottom_Button_Text" title = "Go to View Reviews Page"> View Reviews </p>
                         </button>

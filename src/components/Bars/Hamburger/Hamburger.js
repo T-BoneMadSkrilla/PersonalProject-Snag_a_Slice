@@ -5,7 +5,7 @@ import './Hamburger.scss';
 class Hamburger extends Component {
     state = {
         sideNav: false,
-        links: ['home', 'about', 'pizzerias', 'signup', 'login']
+        links: ['Home', 'About', 'Pizzerias', 'Signup', 'Login']
     };
 
     render(){
@@ -27,19 +27,19 @@ class Hamburger extends Component {
                     <p className = "Hamburger_Text"> Menu </p>
                 </div>
                 <div className = "Hamburger_DropDown">
-                    <Link to = "/home">
+                    <Link to = "/Home">
                     <p className = "Hamburger_Link_Text"> Home </p>
                     </Link>
-                    <Link to = "/about">
+                    <Link to = "/About">
                     <p className = "Hamburger_Link_Text"> About </p>
                     </Link>
-                    <Link to = "/pizzerias">
+                    <Link to = "/Pizzerias">
                     <p className = "Hamburger_Link_Text"> Pizzerias </p>
                     </Link>
-                    <Link to = "/signup">
+                    <Link to = "/Signup">
                     <p className = "Hamburger_Link_Text"> Sign up </p>
                     </Link>
-                    <Link to = "/login">
+                    <Link to = "/Login">
                     <p className = "Hamburger_Link_Text"> Login </p>
                     </Link>
                 </div>

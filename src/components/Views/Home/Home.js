@@ -30,7 +30,7 @@ class Home extends Component {
                             <img className = "Home_Content_Middle_Search_Filter_Icon" src = "https://image.flaticon.com/icons/svg/60/60954.svg" title = "Click to Filter" />
                         </button>
                     </div>
-                    <Link to = "/pizzerias">
+                    <Link to = "/Pizzerias">
                     <div className = "Home_Content_Bottom_Button">
                         <p className = "Home_Content_Bottom_Button_Text"> View All Pizzerias </p>
                     </div>

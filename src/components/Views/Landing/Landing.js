@@ -13,7 +13,7 @@ class Landing extends Component {
                     <div className = "Message_Landing">
                         <p className = "Message_Text"> SnagaSlice is a restaurant app for pizza lovers. </p>
                     </div>
-                    <Link to = "/home">
+                    <Link to = "/Home">
                     <div className = "Button_Landing">
                         <div className = "Button_Landing_Container">
                             <p className = "Button_Landing_Text"> Enter </p>

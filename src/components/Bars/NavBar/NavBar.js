@@ -25,28 +25,28 @@ class NavBar extends Component {
                 </div>
                 <div className = "Navigation_Tab_Container">
                     
-                    <Link to = "/home">
+                    <Link to = "/Home">
                     <p 
                         className = "Navigation_Tab_Text" 
                         title = "Go to the Home Page"> Home 
                     </p>
                     </Link>
 
-                    <Link to = "/about">
+                    <Link to = "/About">
                     <p 
                         className = "Navigation_Tab_Text" 
                         title = "Go to the About Page"> About 
                     </p>
                     </Link>
 
-                    <Link to = "/signup">
+                    <Link to = "/Signup">
                     <p 
                         className = "Navigation_Tab_Text" 
                         title = "Go to the Sign up Page"> Sign Up 
                     </p>
                     </Link>
 
-                    <Link to = "login">
+                    <Link to = "Login">
                     <p 
                         className = "Navigation_Tab_Text" 
                         title = "Go to the Login Page"> Login 

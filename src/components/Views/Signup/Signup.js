@@ -88,7 +88,7 @@ class Signup extends Component {
                     <button className = "Submit_Signup">
                         <p className = "Submit_Text_Signup"> Sign up </p>
                     </button>
-                    <Link to = "/login">
+                    <Link to = "/Login">
                     <p className = "AlreadyMember_Text"> Already a member? Login in now.</p>
                     </Link>
                 </form>
