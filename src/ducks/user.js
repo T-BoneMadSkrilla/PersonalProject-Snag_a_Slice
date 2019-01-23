@@ -11,6 +11,8 @@ const LOGIN = "LOGIN";
 const SIGN_UP = "SIGN_UP";
 const GET_USER = "GET_USER";
 const Get_Pizzeria_Data = "Pizzeria_Data";
+const Put_Pizzeria_Comment = "User_Adds_Comment";
+const Delete_Pizzeria_Comment = "User_Deletes_Comment";
 
 
 // Login Action Creator
@@ -45,6 +47,21 @@ export function getPizzeria() {
     };
 };
 
+// Put Pizzeria Comment Action Creator
+export function postComment(){
+    return {
+        type: Put_Pizzeria_Comment,
+        
+    }
+}
+
+// Delete Pizzeria Comment Action Creator
+export function deleteComment(){
+    return {
+        type: Delete_Pizzeria_Comment,
+    
+    }
+}
 
 // Reducer Function
 export default function reducer(state = initialState, action){
@@ -61,6 +78,10 @@ export default function reducer(state = initialState, action){
             return { ...state, pizzeria: action.payload.data};
         case Get_Pizzeria_Data + "_REJECTED":
             return { ...state, error: "Pizzeria Data Could Not Be Found"};
+        case Put_Pizzeria_Comment + "_FULFILLED":
+            return { ...state, pizzeria: action.payload.data};
+        case Delete_Pizzeria_Comment + "_FULFILLED":
+            return { ...state, pizzeria: action.payload.data};
         default:
             return state;
     };
