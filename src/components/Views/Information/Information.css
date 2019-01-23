@@ -24,7 +24,7 @@
     border: 10px solid #64080F;
     border-radius: 25px;
     height: 1380px;
-    width: 1000px;
+    width: 600px;
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -39,7 +39,7 @@
     border: 3px solid #64080F;
     border-radius: 25px;
     height: 605px;
-    width: 900px;
+    width: 550px;
     margin-top: 2%;
 }
 
@@ -51,7 +51,7 @@
     
     border-bottom: 3px solid #64080F;
     height: 285px;
-    width: 850px;
+    width: 500px;
     margin-top: 1%
 }
 
@@ -78,7 +78,7 @@
     
     /* border: 3px solid #64080F; */
     height: 215px;
-    width: 850px;
+    width: 500px;
     margin-top: 0.5%;
 }
 
@@ -89,19 +89,20 @@
 }
 
 .Information_Container_Top_Top_Rating {
-    background-color: black;
-    border: 2px solid #64080F;
-    height: 100px;
-    width: 100px;
-    margin-top: 14%
+    background-color: #64080F;
+    border: 2px solid #B4A390;
+    height: 80px;
+    width: 80px;
+    margin-top: 29%
 }
 
 .Information_Container_Top_Top_Rating_Text {
     font-family: 'Fugaz One', cursive;
     font-size: 55px;
-    color: white;
-    margin-top: 15%;
-    margin-left: 30%
+    color: #B4A390;
+    text-shadow: 1.5px 1px 1px #EFE1C9;
+    margin-top: 5%;
+    margin-left: 25%
 }
 
 
@@ -113,7 +114,7 @@
     
     border-top: 3px solid #64080F;
     height: 285px;
-    width: 850px;
+    width: 500px;
     margin-top: 1%
 }
 
@@ -136,11 +137,6 @@
     font-weight: bold;
 }
 
-.Information_Container_Top_Bottom_Middle {
-    border: 3px solid #64080F;
-    
-}
-
 .Information_Container_Top_Bottom_Right {
     display: flex;
 	flex-direction: column;
@@ -154,18 +150,140 @@
 
 .Information_Container_Top_Bottom_Bottom_Text {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18.5px;
     color: black;
     font-weight: bold;
     margin-top: 8.5%;
 }
 
+.Information_Container_Top_Bottom_Bottom_Button {
+    background-color: #64080F;
+    border: 2px solid #B4A390;
+    border-radius: 25px;
+    height: 35px;
+    width: 230px;
+    margin-top: 15%
+
+}
+
+.Information_Container_Top_Bottom_Bottom_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 20px;
+    color: #B4A390;
+    margin-left: 22%;
+    margin-top: 1%
+}
+
 .Information_Container_Bottom {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+    
     background-color: #EFE1C9;    
     border: 3px solid #64080F;
     border-radius: 25px;
     height: 700px;
-    width: 900px;
-    margin-top: 4%;
+    width: 550px;
+    margin-top: 6%;
     margin-bottom: 2%
+}
+
+.Information_Container_Bottom_Top {
+    border-bottom: 3px solid #64080F;
+    height: 330px;
+    width: 500px;
+
+}
+
+.Information_Container_Bottom_Bottom {
+    border: 3px solid #64080F;
+    height: 330px;
+    width: 500px;
+
+}
+
+.Information_Container_Bottom_Top {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Information_Container_Bottom_Top_Title {
+    /* border: 3px solid #64080F; */
+    height: 101px;
+    width: 500px;
+    margin-top: 1%;
+    margin-bottom: 4%
+}
+
+.Information_Container_Bottom_Top_Title_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 26px;
+    color: #64080F;
+    text-decoration: underline;
+    margin-top: 5%;
+    margin-left: 10%
+}
+
+.Information_Container_Bottom_Top_Input_Field {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: black;
+    border: 3px solid #64080F;
+    height: 50px;
+    width: 500px;
+    margin-top: -8%;
+    margin-bottom: 4%
+}
+
+.Information_Container_Bottom_Top_Post_Delete {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+    
+    /* border: 3px solid #64080F; */
+    height: 70px;
+    width: 500px;
+    margin-top: -2%;
+    margin-bottom: 1.5%
+}
+
+.Information_Container_Bottom_Top_Post_Delete_Button {
+    background-color: #64080F;
+    border: 2px solid #B4A390;
+    border-radius: 25px;
+    height: 40px;
+    width: 90px;
+}
+
+.Information_Container_Bottom_Top_Post_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 22px;
+    color: #B4A390;
+}
+
+.Information_Container_Bottom_Top_Delete_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 22px;
+    color: #B4A390;
+}
+
+.Information_Container_Bottom_Top_Input_Field_Result {
+    background-color: white;
+    border: 2px solid #64080F;
+    border-radius: 12px;
+    height: 100px;
+    width: 500px;
+    margin-top: -0.5%;
+}
+
+.Information_Container_Bottom_Top_Input_Field_Result_Text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    margin-left: 28%;
+    margin-top: 7%;
 }
