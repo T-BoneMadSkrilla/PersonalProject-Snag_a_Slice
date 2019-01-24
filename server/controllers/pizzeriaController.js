@@ -11,14 +11,15 @@ function getPizzerias(req, res){
 
 function getComments(req, res){
     const db = req.app.get('db')
-    db.get_Pizzeria_Comments()
+    db.get_Pizzeria_Comments(+req.params.id)
     .then(response => res.json(response))
     .catch(error_in_backend => console.log(error_in_backend))
 };
 
 function postComments(req, res){
     const db = req.app.get('db')
-    db.addComments([req.body.id, req.body.review, req.body.pizza_id])
+    // console.log(req.body)
+    db.addComments([req.body.username, req.body.review, req.body.pizza_id])
     .then(response => res.json(response))
     .catch(error_in_backend => console.log(error_in_backend))
 }
@@ -37,10 +38,16 @@ function deleteComments(req, res){
     .catch(error_in_backend => console.log(error_in_backend))
 };
 
+function getUser(req, res){
+    // console.log(req.session.user)
+    res.json(req.session.user)
+}
+
 module.exports = {
     getPizzerias,
     getComments,
     postComments,
     updateComments,
-    deleteComments
+    deleteComments,
+    getUser
 }

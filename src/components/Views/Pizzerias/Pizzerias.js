@@ -40,8 +40,8 @@ class Pizzerias extends Component {
     };
 
     render(){
-        console.table(this.state)
-        console.log(this.props)
+        // console.table(this.state)
+        // console.log(this.props)
         // let frontcardDiplay = this.props.user[this.props.currentIndex];
             return(
                 this.props.user[this.state.counter] ?

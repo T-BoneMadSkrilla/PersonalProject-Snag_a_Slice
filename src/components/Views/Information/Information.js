@@ -1,8 +1,12 @@
+import axios from 'axios';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {Link} from "react-router-dom";
 import {getPizzeria} from '../../../ducks/user';
 import {getComment} from '../../../ducks/user';
+import {postComment} from '../../../ducks/user';
+import {updateComment} from '../../../ducks/user';
+import {deleteComment} from '../../../ducks/user';
 
 import './Information.css'
 
@@ -14,22 +18,36 @@ class Information extends Component {
             username: "",
             review: "",
         };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handlePost = this.handlePost.bind(this);
+        this.handleUpdate = this.handleUpdate.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     };
 
     componentDidMount(){
         this.props.getPizzeria()
-        this.props.getComment()
-
+        this.props.getComment(this.props.match.params.id)
     };
     
+
+
     handleChange(e){
         this.setState({ [e.target.name]: e.target.value})
     };
 
-    handleSubmit(e){
+    handlePost(e){
         e.preventDefault();
-        this.props.post(this.state.username, this.state.review, this.props.match.params.id)
+        this.props.postComment(this.state.username, this.state.review, this.props.match.params.id)
     };
+
+    handleUpdate(){
+        this.props.put(this.state.review, this.props.match.params.id)
+    }
+
+    handleDelete(){
+        this.props.delete(this.state.review, this.props.match.params.id)
+    }
 
     render(){
         // console.log(this.props.user[+this.props.match.params.id])
@@ -124,9 +142,9 @@ class Information extends Component {
 
                             <input 
                                 onChange = {this.handleChange}
-                                value = {this.state.review} 
+                                // value = {this.state.review} 
                                 type = "text"
-                                name = "Users Review"
+                                name = "review"
                                 placeholder = "Type Here ...."
                                 className = "Information_Container_Bottom_Top_Input_Field" 
                             />
@@ -136,30 +154,31 @@ class Information extends Component {
                                 <button 
                                     className = "Information_Container_Bottom_Top_Post_Delete_Button" 
                                     title = "Edit your Comment" 
-                                    onClick >
+                                    onClick = {this.handleUpdate}>
                                         <p className = "Information_Container_Bottom_Top_Edit_Button_Text"> Edit </p>
                                 </button>
                                 
                                 <button 
                                     className = "Information_Container_Bottom_Top_Post_Delete_Button" 
                                     title = "Post your Comment" 
-                                    onClick > 
+                                    onClick = {this.handlePost}> 
                                         <p className = "Information_Container_Bottom_Top_Post_Button_Text"> Post </p>
                                 </button>
                                 
                                 <button 
                                     className = "Information_Container_Bottom_Top_Post_Delete_Button" 
                                     title = "Delete your Comment" 
-                                    onClick > 
+                                    onClick = {this.handleDelete}> 
                                         <p className = "Information_Container_Bottom_Top_Delete_Button_Text"> Delete </p>
                                 </button>
 
                             </div>
-                            <div className = "Information_Container_Bottom_Top_Input_Field_Result">
-                                <p className = "Information_Container_Bottom_Top_Input_Field_Result_Text" > {this.props.user[+this.props.match.params.id].review} </p>
-                            </div>
+
                         </div>
-                        <div className = "Information_Container_Bottom_Bottom"></div>                        
+                        <div className = "Information_Container_Bottom_Bottom">
+                            <p className = "Information_Container_Bottom_Bottom_Text"> View Pizzeria Reviews </p>
+                            <div className = "Information_Container_Bottom_Bottom_Review_Field"> </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -173,4 +192,20 @@ const mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps, {getPizzeria: getPizzeria, getComment: getComment}) (Information);
+export default connect(
+
+    mapStateToProps, 
+
+    {
+
+        getPizzeria: getPizzeria, 
+        getComment: getComment, 
+        postComment: postComment,  
+        updateComment: updateComment,
+        deleteComment: deleteComment
+
+    }) 
+
+    (Information);
+
+//{this.props.user[+this.props.match.params.id].review} 

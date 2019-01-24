@@ -191,14 +191,7 @@
 
 .Information_Container_Bottom_Top {
     border-bottom: 3px solid #64080F;
-    height: 330px;
-    width: 500px;
-
-}
-
-.Information_Container_Bottom_Bottom {
-    border: 3px solid #64080F;
-    height: 330px;
+    height: 200px;
     width: 500px;
 
 }
@@ -248,7 +241,7 @@
     height: 70px;
     width: 500px;
     margin-top: -2%;
-    margin-bottom: 1.5%
+    margin-bottom: 2%
 }
 
 .Information_Container_Bottom_Top_Post_Delete_Button {
@@ -257,6 +250,7 @@
     border-radius: 25px;
     height: 40px;
     width: 90px;
+    margin-bottom: 2px;
 }
 
 /* Condense Below */
@@ -287,7 +281,7 @@
     border-radius: 12px;
     height: 100px;
     width: 500px;
-    margin-top: -0.5%;
+    /* margin-top: -0.5%; */
 }
 
 .Information_Container_Bottom_Top_Input_Field_Result_Text {
@@ -296,4 +290,31 @@
     color: black;
     margin-left: 28%;
     margin-top: 7%;
+}
+
+.Information_Container_Bottom_Bottom {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+    
+    border-top: 3px solid #64080F;
+    height: 400px;
+    width: 500px;
+}
+
+.Information_Container_Bottom_Bottom_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 24px;
+    color: #64080F;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+.Information_Container_Bottom_Bottom_Review_Field {
+    background-color: white;
+    border: 2px solid #64080F;
+    border-radius: 8px;
+    height: 400px;
+    width: 500px;
 }
