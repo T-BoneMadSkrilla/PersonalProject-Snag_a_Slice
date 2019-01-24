@@ -220,10 +220,10 @@
 
 .Information_Container_Bottom_Top_Title_Text {
     font-family: 'Fugaz One', cursive;
-    font-size: 26px;
+    font-size: 24px;
     color: #64080F;
     text-decoration: underline;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 10%
 }
 
@@ -231,7 +231,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     color: black;
-    border: 3px solid #64080F;
+    border: 2px solid #64080F;
     height: 50px;
     width: 500px;
     margin-top: -8%;
@@ -259,6 +259,14 @@
     width: 90px;
 }
 
+/* Condense Below */
+
+.Information_Container_Bottom_Top_Edit_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 22px;
+    color: #B4A390;
+}
+
 .Information_Container_Bottom_Top_Post_Button_Text {
     font-family: 'Fugaz One', cursive;
     font-size: 22px;
@@ -270,6 +278,8 @@
     font-size: 22px;
     color: #B4A390;
 }
+
+/* Condense Above */
 
 .Information_Container_Bottom_Top_Input_Field_Result {
     background-color: white;
