@@ -28,13 +28,14 @@ app.post("/auth/signup", authController.signup);
 app.get("/auth/user", authController.user);
 
 // Pizzerias Endpoints
-app.get("/pizzerias/all", pizzeriaController.getPizzerias);
+app.get("/pizzeria/all", pizzeriaController.getPizzerias);
 
-// Pizza Review Endpoints
-app.get("/pizzeria/getReview")
-app.post("/pizzeria/postReview")
-app.put("/pizzeria/updateReview")
-app.delete("/pizzeria/deleteReview")
+// Pizzeria Review Endpoints
+app.get("/pizzeria/comments", pizzeriaController.getComments)
+app.post("/pizzeria/postComments", pizzeriaController.postComments)
+app.put("/pizzeria/updateComments/:id", pizzeriaController.updateComments)
+app.delete("/pizzeria/deleteComments/:id", pizzeriaController.deleteComments)
+
 
 app.listen(process.env.EXPRESS_PORT || 3056, () => {
     console.log(`Listening on ${process.env.EXPRESS_PORT}`);
