@@ -40,17 +40,17 @@ class Login extends Component {
                     <input 
                         onChange={this.handleChange} 
                         value={this.state.username} 
-                        className = "Text_Username_Login" 
                         type = "text" 
                         name = "username"  
                         placeholder = "Enter Username"
+                        className = "Text_Username_Login" 
                     />
                     <input 
                         onChange={this.handleChange} 
                         value={this.state.password} 
-                        className = "Text_Password_Login" 
                         type = "password" 
                         name = "password" 
+                        className = "Text_Password_Login" 
                         placeholder = "Enter Password" 
                     />
                     <button className = "Submit_Login">
