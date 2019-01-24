@@ -50,26 +50,26 @@ export function getPizzeria() {
 };
 
 // Get Pizzeria Comment Action Creator
-export function getComment(){
+export function getComment(id){
     return {
         type: GET_Pizzeria_Comment,
-        payload: axios.get("/pizzeria/comments")
+        payload: axios.get(`/pizzeria/comments/${id}`)
     };
 };
 
 // Post Pizzeria Comment Acton Creator
-export function postComment(review){
+export function postComment(username, review, id){
     return {
         type: POST_Pizzeria_Comment,
-        payload: axios.post("/pizzerias/comments", {review})
+        payload: axios.post("/pizzeria/postComments", {username, review, id})
     };
 };
 
 // Put Pizzeria Comment Action Creator
-export function updateComment(){
+export function updateComment(review){
     return {
         type: PUT_Pizzeria_Comment,
-        payload: axios.put("/pizzeria/updateComments/:id")
+        payload: axios.put("/pizzeria/updateComments/:id", {review})
     };
 };
 
@@ -100,7 +100,9 @@ export default function reducer(state = initialState, action){
             return { ...state, pizzeria: action.payload.data};
         case GET_Pizzeria_Comment + "_PENDING":
             return { ...state };
+
         case POST_Pizzeria_Comment + "_FULLFILLED":
+            console.log(action.payload.data)
             return { ...state, pizzeria: action.payload.data};
         case POST_Pizzeria_Comment + "_PENDING":
             return { ...state };
