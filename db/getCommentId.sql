@@ -1,0 +1,1 @@
+SELECT id from comments WHERE username = $1 AND review = $2
