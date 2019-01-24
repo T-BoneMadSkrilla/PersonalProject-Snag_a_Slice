@@ -11,8 +11,10 @@ const LOGIN = "LOGIN";
 const SIGN_UP = "SIGN_UP";
 const GET_USER = "GET_USER";
 const Get_Pizzeria_Data = "Pizzeria_Data";
-const Put_Pizzeria_Comment = "User_Adds_Comment";
-const Delete_Pizzeria_Comment = "User_Deletes_Comment";
+const GET_Pizzeria_Comment = "User_Adds_Comment";
+const POST_Pizzeria_Comment = "User_Post_Comment";
+const PUT_Pizzeria_Comment = "User_Update_Comment";
+const Delete_Pizzeria_Comment = "User_Delete_Comment";
 
 
 // Login Action Creator
@@ -43,25 +45,41 @@ export function getUser() {
 export function getPizzeria() {
     return {
       type: Get_Pizzeria_Data,
-      payload: axios.get("/pizzerias/all")
+      payload: axios.get("/pizzeria/all")
+    };
+};
+
+// Get Pizzeria Comment Action Creator
+export function getComment(){
+    return {
+        type: GET_Pizzeria_Comment,
+        payload: axios.get("/pizzeria/comments")
+    };
+};
+
+// Post Pizzeria Comment Acton Creator
+export function postComment(review){
+    return {
+        type: POST_Pizzeria_Comment,
+        payload: axios.post("/pizzerias/comments", {review})
     };
 };
 
 // Put Pizzeria Comment Action Creator
-export function postComment(){
+export function updateComment(){
     return {
-        type: Put_Pizzeria_Comment,
-        
-    }
-}
+        type: PUT_Pizzeria_Comment,
+        payload: axios.put("/pizzeria/updateComments/:id")
+    };
+};
 
 // Delete Pizzeria Comment Action Creator
 export function deleteComment(){
     return {
         type: Delete_Pizzeria_Comment,
-    
-    }
-}
+        payload: axios.delete("/pizzeria/deleteComments/:id")
+    };
+};
 
 // Reducer Function
 export default function reducer(state = initialState, action){
@@ -78,10 +96,22 @@ export default function reducer(state = initialState, action){
             return { ...state, pizzeria: action.payload.data};
         case Get_Pizzeria_Data + "_REJECTED":
             return { ...state, error: "Pizzeria Data Could Not Be Found"};
-        case Put_Pizzeria_Comment + "_FULFILLED":
+        case GET_Pizzeria_Comment + "_FULFILLED":
             return { ...state, pizzeria: action.payload.data};
-        case Delete_Pizzeria_Comment + "_FULFILLED":
+        case GET_Pizzeria_Comment + "_PENDING":
+            return { ...state };
+        case POST_Pizzeria_Comment + "_FULLFILLED":
             return { ...state, pizzeria: action.payload.data};
+        case POST_Pizzeria_Comment + "_PENDING":
+            return { ...state };
+        case PUT_Pizzeria_Comment + "_FULLFILLED":
+            return { ...state, pizzeria: action.payload.data};
+        case PUT_Pizzeria_Comment + "_PENDING":
+            return { ...state };
+        case Delete_Pizzeria_Comment + "_FULLFILLED":
+            return { ...state, pizzeria: action.payload.data};
+        case Delete_Pizzeria_Comment + "_PENDING":
+            return { ...state};
         default:
             return state;
     };
