@@ -17,6 +17,9 @@ class Information extends Component {
         this.state = {
             username: "",
             review: "",
+            user_review: [],
+            comments: [],
+            id: ""
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -28,9 +31,24 @@ class Information extends Component {
     componentDidMount(){
         this.props.getPizzeria()
         this.props.getComment(this.props.match.params.id)
+        this.getUserInformation()
+        this.getAllComments()
+    };
+
+    getUserInformation = () => {
+        axios.get("/pizzeria/comments/user").then(response => {
+            // console.log(response)
+            this.setState({username:response.data.username})
+        })
+    };
+
+    getAllComments = () => {
+        axios.get("/pizzeria/comments/all").then(response => {
+            console.log(response)
+            this.setState({comments:response.data})
+        })
     };
     
-
 
     handleChange(e){
         this.setState({ [e.target.name]: e.target.value})
@@ -45,11 +63,28 @@ class Information extends Component {
         this.props.put(this.state.review, this.props.match.params.id)
     }
 
+    getId(id){
+        console.log(id)
+        this.setState({id})
+    };
+
     handleDelete(){
-        this.props.delete(this.state.review, this.props.match.params.id)
-    }
+        let newArray = this.state.comments.filter(comment => {
+            return comment.id !== this.state.id
+        })
+        this.setState({comments:newArray})
+        axios.delete(`/pizzeria/deleteComments/${this.state.id}`)
+    };
 
     render(){
+        let DisplayComments = this.state.comments.map(comment => {
+            return(
+                <div onClick = {()=>this.getId(comment.id)}>
+                    <p> {comment.username} {comment.review}</p>
+                </div>
+            )
+        })
+
         // console.log(this.props.user[+this.props.match.params.id])
         return(
             <div className = "Information" id = {this.props.user[+this.props.match.params]}>
@@ -177,7 +212,7 @@ class Information extends Component {
                         </div>
                         <div className = "Information_Container_Bottom_Bottom">
                             <p className = "Information_Container_Bottom_Bottom_Text"> View Pizzeria Reviews </p>
-                            <div className = "Information_Container_Bottom_Bottom_Review_Field"> </div>
+                            <div className = "Information_Container_Bottom_Bottom_Review_Field"> {DisplayComments} </div>
                         </div>                        
                     </div>
                 </div>

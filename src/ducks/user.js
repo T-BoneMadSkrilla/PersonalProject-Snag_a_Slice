@@ -61,7 +61,7 @@ export function getComment(id){
 export function postComment(username, review, id){
     return {
         type: POST_Pizzeria_Comment,
-        payload: axios.post("/pizzeria/postComments", {username, review, id})
+        payload: axios.post("/pizzeria/postComments", { username, review, id})
     };
 };
 
@@ -74,10 +74,10 @@ export function updateComment(review){
 };
 
 // Delete Pizzeria Comment Action Creator
-export function deleteComment(){
+export function deleteComment(id){
     return {
         type: Delete_Pizzeria_Comment,
-        payload: axios.delete("/pizzeria/deleteComments/:id")
+        payload: axios.delete(`/pizzeria/deleteComments/${id}`)
     };
 };
 
