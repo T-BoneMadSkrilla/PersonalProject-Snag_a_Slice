@@ -80,9 +80,32 @@ class Information extends Component {
         console.log(this.props)
         let DisplayComments = this.state.comments.map(comment => {
             return(
-                <div onClick = {()=>this.getId(comment.id)}>
-                    <p> {comment.username}: {comment.review}</p>
+                <div className = "Comment_Container">
+
+                    <div className = "Comment_Container_Top">
+
+                        <input 
+                            onClick = {() => this.getId(comment.id)} 
+                            className = "Comment_CheckBox" type = "Checkbox" 
+                        />
+
+                        <p className = "Comment_UserName"> {comment.username} </p>
+
+                    </div>
+
+                    <div className = "Comment_Container_Middle">
+                        <p className = "Comment_Text"> {comment.review} </p>
+                    </div>
+
+                    <button onClick = {this.handleDelete} className = "Comment_Container_Bottom">
+
+                        <img className = "Comment_Delete" src="https://image.flaticon.com/icons/svg/1400/1400390.svg" alt="Delete" />
+                    
+                    </button>
                 </div>
+                // <div onClick = {()=>this.getId(comment.id)}>
+                //     <p> {comment.username}: {comment.review}</p>
+                // </div>
             )
         })
 
@@ -138,7 +161,8 @@ class Information extends Component {
                     <div className = "Information_Right_Inner_Container">
                         <div className = "Information_Right_Inner_Container_Title"> User's Reviews </div>
                         <div className = "Information_Right_Inner_Container_Field">
-                            <div className = "Comment_Container">
+                            {DisplayComments}
+                            {/* <div className = "Comment_Container">
                                 <div className = "Comment_Container_Top">
                                     <input className = "Comment_Checkbox" type = "Checkbox" />
                                     <p className = "Comment_UserName"> wamontgomery0068 </p>
@@ -151,7 +175,7 @@ class Information extends Component {
                                     onClick = {this.handleDelete}>
                                     <img className = "Comment_Delete" src="https://image.flaticon.com/icons/svg/1400/1400390.svg" alt="Delete" />
                                 </button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
