@@ -3,7 +3,8 @@ import axios from "axios";
 const initialState = {
     user: {},
     pizzeria: [],
-    error: ""
+    error: "",
+    comment: []
 };
 
 // Action types
@@ -51,6 +52,7 @@ export function getPizzeria() {
 
 // Get Pizzeria Comment Action Creator
 export function getComment(id){
+    // console.log(id)
     return {
         type: GET_Pizzeria_Comment,
         payload: axios.get(`/pizzeria/comments/${id}`)
@@ -97,17 +99,17 @@ export default function reducer(state = initialState, action){
         case Get_Pizzeria_Data + "_REJECTED":
             return { ...state, error: "Pizzeria Data Could Not Be Found"};
         case GET_Pizzeria_Comment + "_FULFILLED":
-            return { ...state, pizzeria: action.payload.data};
+            return { ...state, comment: action.payload.data};
         case GET_Pizzeria_Comment + "_PENDING":
             return { ...state };
 
         case POST_Pizzeria_Comment + "_FULLFILLED":
             console.log(action.payload.data)
-            return { ...state, pizzeria: action.payload.data};
+            return { ...state, comment: action.payload.data};
         case POST_Pizzeria_Comment + "_PENDING":
             return { ...state };
         case PUT_Pizzeria_Comment + "_FULLFILLED":
-            return { ...state, pizzeria: action.payload.data};
+            return { ...state, comment: action.payload.data};
         case PUT_Pizzeria_Comment + "_PENDING":
             return { ...state };
         case Delete_Pizzeria_Comment + "_FULLFILLED":

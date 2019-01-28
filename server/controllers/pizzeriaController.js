@@ -9,8 +9,16 @@ function getPizzerias(req, res){
 
 // Pizzeria Review Functionality
 
+function getNumberCount(req, res){
+    const db = req.app.get('db')
+    db.get_number_comments(+req.params.id)
+    .then(response => res.json(response))
+    .catch(error_in_backend => console.log(error_in_backend))
+};
+
 function getComments(req, res){
     const db = req.app.get('db')
+    console.log(req.params.id)
     db.get_Pizzeria_Comments(+req.params.id)
     .then(response => res.json(response))
     .catch(error_in_backend => console.log(error_in_backend))
@@ -27,7 +35,7 @@ function postComments(req, res){
     const db = req.app.get('db')
     console.log(req.body)
 
-    db.addComments([req.body.username, req.body.review, req.body.pizza_id])
+    db.addComments([req.body.username, req.body.review, +req.body.id])
     .then(response => res.json(response))
     .catch(error_in_backend => console.log(error_in_backend))
 };
@@ -59,5 +67,6 @@ module.exports = {
     updateComments,
     deleteComments,
     getUser,
-    getAllComments
+    getAllComments,
+    getNumberCount
 }

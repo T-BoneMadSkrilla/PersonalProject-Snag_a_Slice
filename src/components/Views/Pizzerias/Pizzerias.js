@@ -4,30 +4,44 @@ import {Link} from "react-router-dom";
 import {getPizzeria} from '../../../ducks/user';
 
 import './Pizzerias.css'
+import axios from 'axios';
 
 class Pizzerias extends Component {
     constructor(){
         super()
 
         this.state = {
-            counter: 0
+            counter: 0,
+            comments: ''
         };
 
         this.handleClickPrevious = this.handleClickPrevious.bind(this);
         this.handleClickNext = this.handleClickNext.bind(this);
+        this.handleCommentCount = this.handleCommentCount.bind(this);
     };
 
     componentDidMount(){
         this.props.getPizzeria()
+        this.handleCommentCount(0)
+    };
+
+    handleCommentCount(id){
+        axios.get(`/pizzeria/comment/count/${id}`).then(response => {
+            console.log(response)
+            this.setState({comments:response.data[0].count})
+        })
     };
 
     handleClickPrevious(){
         if (this.state.counter === 0){
             this.setState ( { counter: this.props.user.length - 1} )
+            
         }
         else {
             this.setState( { counter: this.state.counter -1 } )
+
         };
+        this.handleCommentCount(this.props.user[this.state.counter].id)
     };
 
     handleClickNext(){
@@ -37,6 +51,7 @@ class Pizzerias extends Component {
         else {
             this.setState ( { counter: this.state.counter +1 } )
         };
+        this.handleCommentCount(this.props.user[this.state.counter].id)
     };
 
     render(){
@@ -74,7 +89,7 @@ class Pizzerias extends Component {
                                 <p className = "Front_Right_Pizzeia_Rating_Text"> {this.props.user[this.state.counter].aggregate_rating} </p>
                             </div>
                             <div className = "Front_Right_Pizzeria_Rating_Content">
-                                <p className = "Front_Right_Pizzeia_Rating_Text"></p>
+                                <p className = "Front_Right_Pizzeia_Rating_Text"> {this.state.comments}</p>
                             </div>
                         </div>
                         <img src = {this.props.user[this.state.counter].pizza_image}  className = "Front_Pizzeria_Card_Image"alt="pizza" />
@@ -90,7 +105,7 @@ class Pizzerias extends Component {
                 </div>
 
                 : <div className = "error_page">
-                    <img className = "Error_Page_Image" src = "https://cdn-images-1.medium.com/max/1600/1*VYPlqLaosLszAtKlx5fHzg.jpeg" />
+                    <img className = "Error_Page_Image" src = "https://i.gifer.com/D1pJ.gif" />
                 </div>
                 
             )

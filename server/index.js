@@ -31,6 +31,7 @@ app.get("/auth/user", authController.user);
 app.get("/pizzeria/all", pizzeriaController.getPizzerias);
 
 // Pizzeria Review Endpoints
+app.get("/pizzeria/comment/count/:id", pizzeriaController.getNumberCount)
 app.get("/pizzeria/comments/all", pizzeriaController.getAllComments)
 app.get("/pizzeria/comments/user", pizzeriaController.getUser)
 app.get("/pizzeria/comments/:id", pizzeriaController.getComments)
