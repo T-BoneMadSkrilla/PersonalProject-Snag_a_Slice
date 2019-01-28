@@ -44,8 +44,8 @@
 	justify-content: flex-start;
 	align-items: center;
     
-    border-bottom: 2px solid black;
-    height: 220px;
+    /* border: 2px solid black; */
+    height: 450px;
     width: 570px;
     margin-bottom: 1%;
     margin-right: 1.5%
@@ -76,34 +76,21 @@
     margin-bottom: 0.5%
 }
 
-.Information_Left_Inner_Top_Container_Image {
-    border: 2px solid black;
-    height: 160px;
-    width: 120px;
-}
-
 .Information_Left_Inner_Top_Container_Image_Image {
     height: 156px;
     width: 117px;
-}
-
-.Information_Left_Inner_Middle_Container {
-    border: 2px solid black;
-    height: 250px;
-    width: 570px;
-    margin-bottom: 1%;
-    margin-right: 1.5%
-
 }
 
 .Information_Left_Inner_Bottom_Container {
     display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
     
-    /* border: 2px solid black; */
-    height: 100px;
+    background-color: #515A48;
+    border: 2px solid #755C20;
+    border-radius: 8px;
+    height: 130px;
     width: 570px;
     margin-right: 1.5%
 }
@@ -112,11 +99,6 @@
     border: 2px solid black;
     height: 98px;
     width: 90px;
-}
-
-.Information_User_Photo {
-    height: 94px;
-    width: 89px;
 }
 
 .Information_Left_Inner_Bottom_Field_Container {
@@ -131,7 +113,7 @@
 	align-items: flex-start;
     
     border: 2px solid black;
-    height: 98px;
+    height: 100px;
     width: 480px;
 }
 
@@ -179,7 +161,7 @@
 .Information_Right_Inner_Container_Title {
     font-family: 'Fugaz One', cursive;
     font-size: 28px;
-    color: black;
+    color: #515A48;
 }
 
 .Information_Right_Inner_Container_Field {
@@ -194,6 +176,7 @@
     border-radius: 5px;
     height: 220px;
     width: 280px;
+    margin-top: 7%
     /* scroll-behavior: auto; */
 }
 
@@ -274,4 +257,185 @@
     width: 18px;
     margin-left: -28%;
     margin-bottom: 30%
+}
+
+/* Information_Left_Inner_Top_Container Components Below */
+
+.Information_Left_Top_Box {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    
+    /* border: 2px solid black; */
+    height: 60px;
+    width: 570px;
+}
+
+.Information_Left_Top_Box_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 30px;
+    color: #515A48;
+}
+
+.Information_Left_Bottom_Box {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    
+    background-color: #515A48;
+    border: 2px solid #755C20;
+    border-radius: 8px;
+    height: 400px;
+    width: 570px;
+    margin-top: 1%
+}
+
+.Information_Left_Bottom_Box_Image {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    
+    background-color: #D6BE85;
+    border: 2px solid #755C20;
+    border-radius: 8px;
+
+    height: 370px;
+    width: 230px;
+    margin-left: 1%
+}
+
+.Information_Left_Bottom_Box_Image_Image {
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 0.5px black;
+    height: 350px;
+    width: 210px;
+}
+
+.Information_Left_Bottom_Box_Content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+    
+    background-color: #D6BE85;
+    border: 2px solid #755C20;
+    border-radius: 8px;
+    height: 370px;
+    width: 320px;
+    margin-right: 1%
+}
+
+.Information_Left_Bottom_Box_Content_Content {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+    
+    /* border: 2px solid black; */
+    height: 320px;
+    width: 300px;
+    margin-top: 1%
+}
+
+.Information_Left_Bottom_Box_Content_Content_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 15px;
+    color: #515A48;
+    margin-left: 1%
+}
+
+.Information_Left_Bottom_Box_Back_Button {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    
+    background-color: #515A48;
+    border: 2px solid #755C20;
+    border-radius: 4px;
+    height: 35px;
+    width: 300px;
+    margin-top: 1%
+}
+
+.Information_Left_Bottom_Box_Back_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 15px;
+    margin-top: 3%;
+    color: #D6BE85;
+    text-decoration: none;
+}
+
+/* Information_Left_Inner_Bottom_Container Components Below */
+
+.Information_Left_Box {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    
+    background-color: #D6BE85;
+    border: 2px solid #755C20;
+    border-radius: 5px;
+    height: 110px;
+    width: 100px;
+    margin-left: 1%
+}
+
+.Information_User_Photo {
+    height: 70px;
+    width: 70px;
+    margin-top: 8%
+
+}
+
+.Information_Left_Username_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 8.5px;
+    color: #515A48;
+    margin-top: 6%
+}
+
+
+.Information_Right_Box {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+    
+    background-color: #D6BE85;
+    border: 2px solid #755C20;
+    border-radius: 5px;
+    height: 110px;
+    width: 450px;
+    margin-left: 1%
+}
+
+.Information_Right_Field {
+    background-color: whitesmoke;
+    border: 2px solid #755C20;
+    border-radius: 4px;
+    height: 65px;
+    width: 438px;
+    margin: 1%
+}
+
+.Information_Right_Post_Button {
+    background-color: #515A48;
+    border: 2px solid #755C20;
+    border-radius: 4px;
+    height: 25px;
+    width: 50px;
+    margin: 1%;
+    margin-left: 88%
+}
+
+.Information_Right_Post_Button_Text {
+    font-family: 'Fugaz One', cursive;
+    font-size: 14px;
+    color: #D6BE85
 }
