@@ -77,10 +77,11 @@ class Information extends Component {
     };
 
     render(){
+        console.log(this.props)
         let DisplayComments = this.state.comments.map(comment => {
             return(
                 <div onClick = {()=>this.getId(comment.id)}>
-                    <p> {comment.username} {comment.review}</p>
+                    <p> {comment.username}: {comment.review}</p>
                 </div>
             )
         })
@@ -88,7 +89,73 @@ class Information extends Component {
         // console.log(this.props.user[+this.props.match.params.id])
         return(
             <div className = "Information" id = {this.props.user[+this.props.match.params]}>
-                <div className = "Information_Container">
+                <div className = "Information_Card">
+                    <div className = "Information_Left_Inner_Container">
+                        <div className = "Information_Left_Inner_Top_Container">
+                            <div className = "Information_Left_Inner_Top_Container_Title">
+
+                                <p 
+                                    className = "Information_Left_Inner_Top_Container_Title_Text"
+                                >
+                                {this.props.user[+this.props.match.params.id].name} 
+                                </p>
+
+                            </div>
+                            <div className = "Information_Left_Inner_Top_Container_Content">
+                                <div className = "Information_Left_Inner_Top_Container_Image">
+                                    <img 
+                                        src = {this.props.user[+this.props.match.params.id].pizzeria_image}className = "Information_Left_Inner_Top_Container_Image_Image" 
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className = "Information_Left_Inner_Middle_Container"></div>
+                        <div className = "Information_Left_Inner_Bottom_Container">
+                            <div className = "Information_Left_Inner_Bottom_Photo_Container">
+                                <img className = "Information_User_Photo" src = "https://image.nola.com/home/nola-media/width600/img/lsu_impact/photo/ed-orgeron-lsu-vs-chattanooga-7c293b27512a8969.jpg" alt = "User Photo" />
+                            </div>
+                            <div className = "Information_Left_Inner_Bottom_Field_Container">
+
+                                <input 
+                                    className = "Information_Left_Inner_Bottom_Field_Input" 
+                                    onChange = {this.handleChange}
+                                    // value = {this.state.review} 
+                                    type = "text"
+                                    name = "review"
+                                    placeholder = "Type Here ...."
+                                />
+                                <button
+                                    className = "Information_Left_Inner_Bottom_Post_Button"
+                                    title = "Post your Comment"
+                                    onClick = {this.handlePost} 
+                                > 
+                                <p className = "Information_Left_Inner_Bottom_Post_Button_Text"> Post </p>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className = "Information_Right_Inner_Container">
+                        <div className = "Information_Right_Inner_Container_Title"> User's Reviews </div>
+                        <div className = "Information_Right_Inner_Container_Field">
+                            <div className = "Comment_Container">
+                                <div className = "Comment_Container_Top">
+                                    <input className = "Comment_Checkbox" type = "Checkbox" />
+                                    <p className = "Comment_UserName"> wamontgomery0068 </p>
+                                </div>
+                                <div className = "Comment_Container_Middle">
+                                    <p className = "Comment_Text"> "Garlic Knots the size of your fist, tasty brews, and the best pizza in town." </p>
+                                </div>
+                                <button 
+                                    className = "Comment_Container_Bottom" 
+                                    onClick = {this.handleDelete}>
+                                    <img className = "Comment_Delete" src="https://image.flaticon.com/icons/svg/1400/1400390.svg" alt="Delete" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <div className = "Information_Container">
                     <div className = "Information_Container_Top">
                         <div className = "Information_Container_Top_Top">
                             <div className = "Information_Container_Top_Top_Title">
@@ -215,7 +282,7 @@ class Information extends Component {
                             <div className = "Information_Container_Bottom_Bottom_Review_Field"> {DisplayComments} </div>
                         </div>                        
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     };
@@ -223,7 +290,9 @@ class Information extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        user: state.pizzeria
+        
+        user: state.pizzeria,
+        comment: state.comment
     };
 };
 
