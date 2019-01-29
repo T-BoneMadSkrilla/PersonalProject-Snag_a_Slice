@@ -96,11 +96,17 @@ class Information extends Component {
                         <p className = "Comment_Text"> {comment.review} </p>
                     </div>
 
-                    <button onClick = {this.handleDelete} className = "Comment_Container_Bottom">
+                    <div className = "Comment_Container_Buttons">
+                        <button className = "Comment_Edit">
+                            <p className = "Comment_Edit_Text"> Edit </p>
+                        </button>
+                        <button onClick = {this.handleDelete} className = "Comment_Container_Bottom">
 
-                        <img className = "Comment_Delete" src="https://image.flaticon.com/icons/svg/1400/1400390.svg" alt="Delete" />
+                            <img className = "Comment_Delete" src="https://image.flaticon.com/icons/svg/1400/1400390.svg" alt="Delete" />
                     
-                    </button>
+                        </button>
+                    </div>
+
                 </div>
             )
         })
