@@ -42,8 +42,11 @@ function postComments(req, res){
 
 function updateComments(req, res){
     const db = req.app.get('db')
-    db.updateComment([req.body.id, req.body.review, req.body.pizza_id])
-    .then(response => res.json(response))
+    console.log(req.body)
+    db.updateComment([+req.body.id, req.body.comment])
+    .then(response =>{ 
+        console.log(response)
+        res.json(response)})
     .catch(error_in_backend => console.log(error_in_backend))
 };
 

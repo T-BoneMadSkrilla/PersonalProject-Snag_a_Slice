@@ -1,1 +1,1 @@
-UPDATE comments SET review = $1 WHERE id = $2
+UPDATE comments SET review = $2 WHERE id = $1;

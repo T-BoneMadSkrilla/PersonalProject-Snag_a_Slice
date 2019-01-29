@@ -19,13 +19,16 @@ class Information extends Component {
             review: "",
             user_review: [],
             comments: [],
-            id: ""
+            id: "",
+            edit: false,
+            newComment: ""
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.handlePost = this.handlePost.bind(this);
         this.handleEdit = this.handleEdit.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
+        this.toggleEdit = this.toggleEdit.bind(this);
     };
 
     componentDidMount(){
@@ -60,24 +63,35 @@ class Information extends Component {
     };
 
     handleEdit(){
-        this.props.put(this.state.review, this.props.match.params.id)
+        // this.props.put(this.state.review, this.props.match.params.id)
+        axios.put("/pizzeria/updateComments/", {id:this.state.id, comment:this.state.newComment}).then(response => {
+            console.log(response)
+            this.setState({comments:response.data})
+        })
     };
+
+    // id: this.state.id, comment:this.state.newComment
 
     getId(id){
         console.log(id)
         this.setState({id})
     };
 
+    toggleEdit(){
+        this.setState({edit:true})
+    };
+
+
     handleDelete(){
-        console.log(this.state.id)
+        // console.log(this.state.id)
         axios.delete(`/pizzeria/deleteComments/${this.state.id}`)
         this.props.getComment(this.props.match.params.id)
     };
 
     render(){
-        console.log(this.props)
+        // console.log(this.props)
         let DisplayComments = this.props.comment.map(comment => {
-            console.log(comment)
+            // console.log(comment)
             return(
                 <div className = "Comment_Container">
 
@@ -92,14 +106,16 @@ class Information extends Component {
 
                     </div>
 
-                    <div className = "Comment_Container_Middle">
-                        <p className = "Comment_Text"> {comment.review} </p>
+                    <div className = "Middle">
+                        {this.state.edit ? <textarea className = "Comment_Text_Area" onChange = {e => this.setState({newComment: e.target.value})}  /> : 
+                        <textarea className = "Comment_Text_Area" value = {comment.review}  readOnly/>}
                     </div>
 
                     <div className = "Comment_Container_Buttons">
-                        <button className = "Comment_Edit" onClick = {() => this.handleUpdate}>
+                    {this.state.edit ? <button className = "Comment_Edit" onClick = {this.handleEdit}><p className = "Comment_Edit_Text"> Save </p></button>:
+                        <button className = "Comment_Edit" onClick = {this.toggleEdit}>
                             <p className = "Comment_Edit_Text"> Edit </p>
-                        </button>
+                        </button>}
                         <button onClick = {this.handleDelete} className = "Comment_Container_Bottom">
 
                             <img className = "Comment_Delete" src="https://image.flaticon.com/icons/svg/1400/1400390.svg" alt="Delete" />
@@ -143,7 +159,7 @@ class Information extends Component {
                         <div className = "Information_Left_Inner_Bottom_Container">
                             <div className = "Information_Left_Box">
                                 <img className = "Information_User_Photo" src = "http://profilepicturesdp.com/wp-content/uploads/2018/06/blank-user-profile-picture-5.png" alt = "User Photo" />
-                                <p className = "Information_Left_Username_Text"> wamontgomery0068 </p>
+                                <p className = "Information_Left_Username_Text"> username </p>
                             </div>
                             <div className = "Information_Right_Box">
                                 <input className = "Information_Right_Field" onChange = {this.handleChange} placeholder = "Type your Comment Here" type = "text" name = "review" />

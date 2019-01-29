@@ -36,7 +36,7 @@ app.get("/pizzeria/comments/all", pizzeriaController.getAllComments)
 app.get("/pizzeria/comments/user", pizzeriaController.getUser)
 app.get("/pizzeria/comments/:id", pizzeriaController.getComments)
 app.post("/pizzeria/postComments", pizzeriaController.postComments)
-app.put("/pizzeria/updateComments/:id", pizzeriaController.updateComments)
+app.put("/pizzeria/updateComments/", pizzeriaController.updateComments)
 app.delete("/pizzeria/deleteComments/:id", pizzeriaController.deleteComments)
 
 

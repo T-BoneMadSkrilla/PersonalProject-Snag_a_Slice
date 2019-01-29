@@ -243,6 +243,16 @@
     margin: 1%
 }
 
+.Comment_Text_Area {
+    background-color: #D6BE85;
+    border: 1px solid #755C20;
+    border-radius: 6px;
+    height: 58px;
+    width: 260px;
+    margin: 1%;
+    margin-left: 1%
+}
+
 .Comment_Container_Buttons {
 	display: flex;
 	flex-direction: row;
@@ -470,4 +480,10 @@
     font-size: 14px;
     color: #D6BE85
 }
+
+.comment.review {
+    font-size: 10px
+}
+
+
 
