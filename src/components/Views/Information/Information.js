@@ -24,7 +24,7 @@ class Information extends Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handlePost = this.handlePost.bind(this);
-        this.handleUpdate = this.handleUpdate.bind(this);
+        this.handleEdit = this.handleEdit.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
     };
 
@@ -59,9 +59,9 @@ class Information extends Component {
         this.props.postComment(this.state.username, this.state.review, this.props.match.params.id)
     };
 
-    handleUpdate(){
+    handleEdit(){
         this.props.put(this.state.review, this.props.match.params.id)
-    }
+    };
 
     getId(id){
         console.log(id)
@@ -97,7 +97,7 @@ class Information extends Component {
                     </div>
 
                     <div className = "Comment_Container_Buttons">
-                        <button className = "Comment_Edit">
+                        <button className = "Comment_Edit" onClick = {() => this.handleUpdate}>
                             <p className = "Comment_Edit_Text"> Edit </p>
                         </button>
                         <button onClick = {this.handleDelete} className = "Comment_Container_Bottom">
