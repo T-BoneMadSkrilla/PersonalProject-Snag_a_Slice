@@ -69,7 +69,33 @@ class Pizzerias extends Component {
                             title = "Previous"
                         />
                     </button>
-                    <div className = "Front_Pizzeria_Card">
+                    <div className = "Pizzeria_Card">
+                        <div className = "Pizzeria_Name">
+                            <p className = "Pizzeria_Name_Text"> {this.props.user[this.state.counter].name} </p>
+                        </div>
+                        <div className = "Pizzeria_City_State">
+                            <p className = "Pizzeria_City_State_Text">{this.props.user[this.state.counter].city}, {this.props.user[this.state.counter].state} </p>
+                        </div>
+                        <div className = "Pizzeria_Image_Container">
+                        <img src = {this.props.user[this.state.counter].pizza_image}  className = "Pizzeria_Image"alt="pizza" />
+                        </div>
+                        <div className = "Pizzeria_Rating_Container">
+                            <div className = "Pizzeria_Rating_Box">
+                                <p className = "Pizzeria_Rating_Box_Text"> {this.props.user[this.state.counter].aggregate_rating} </p>
+                                <p className = "Pizzeria_Rating_Box_Text_Text"> Aggregate Rating </p>
+                            </div>
+                            <Link to = {`/pizzeria/information/${this.state.counter}`}>
+                            <div className = "Pizzeria_Information_Button">
+                                <p className = "Pizzeria_Information_Button_Text"> View Information </p>
+                            </div>
+                            </Link>
+                            <div className = "Pizzeria_Number_Reviews">
+                                <p className = "Pizzeria_Review_Box_Text"> {this.state.comments} </p>
+                                <p className = "Pizzeria_Review_Box_Text_Text"> Number of Reviews </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className = "Front_Pizzeria_Card">
                         <div className = "Front_Middle_Pizzeria_Card_Content">
                             <div className = "Front_Middle_Pizzeria_Card_Title">
                                 <div className = "Front_Middle_Pizzeria_Card_Title_Text"> {this.props.user[this.state.counter].name} </div>
@@ -93,7 +119,7 @@ class Pizzerias extends Component {
                             </div>
                         </div>
                         <img src = {this.props.user[this.state.counter].pizza_image}  className = "Front_Pizzeria_Card_Image"alt="pizza" />
-                    </div>
+                    </div> */}
                     <button className = "Left_Right_Arrow" onClick={ () => this.handleClickNext()}>
                         <img 
                             className = "Arrow_Icon" 
