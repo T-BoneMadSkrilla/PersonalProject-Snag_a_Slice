@@ -26,7 +26,7 @@ class Login extends Component {
     
     render(){
         if (this.props.user.username){
-            return <Redirect to = '/account' />
+            return <Redirect to = '/Pizzerias' />
         };
         return(
             <div className = "Login">

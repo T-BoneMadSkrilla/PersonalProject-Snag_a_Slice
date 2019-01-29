@@ -8,6 +8,7 @@
     background-color: #EFE1C8;
     
     height: 60px;
+    width: 1016.5px;
 }
 
 .Navigation_Signage_Container {
@@ -21,7 +22,7 @@
     /* border: 2px solid black; */
     margin-left: 0.5%;
     height: 55px;
-    width: 350px;
+    width: 400px;
 }
 
 .Navigation_Signage_Image {
@@ -94,7 +95,7 @@
     /* border: 2px solid black; */
     margin-left: 1%;
     height: 55px;
-    width: 40%;
+    width: 75%;
     margin-left: 35%
 
 }
@@ -160,13 +161,6 @@
 //         display: block;
 //     }
 // }
-
-@media only screen and (max-width: 1138px) {
-    .Navigation_Container {
-        display: none;
-        width: 100vw;
-    }
-}
 
 @media only screen and (max-width: 800px) {
     .Navigation_Container {
