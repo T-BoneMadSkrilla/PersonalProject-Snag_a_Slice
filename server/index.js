@@ -6,8 +6,10 @@ const session = require('express-session');
 const app = express();
 const authController = require("./controllers/authController");
 const pizzeriaController = require("./controllers/pizzeriaController");
+const path = require('path');
 
 app.use(json());
+app.use( express.static( `${__dirname}/../build` ) );
 app.use(session({
   secret: process.env.SECRET,
   resave: true,
@@ -16,6 +18,7 @@ app.use(session({
     maxAge: 1000 * 60 * 60 * 24 * 7
   }
 }))
+
 
 massive(process.env.CONNECTION_STRING).then(db => {
     app.set("db", db);
@@ -39,6 +42,9 @@ app.post("/pizzeria/postComments", pizzeriaController.postComments)
 app.put("/pizzeria/updateComments/", pizzeriaController.updateComments)
 app.delete("/pizzeria/deleteComments/:id", pizzeriaController.deleteComments)
 
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 app.listen(process.env.EXPRESS_PORT || 3056, () => {
     console.log(`Listening on ${process.env.EXPRESS_PORT}`);
