@@ -12,6 +12,7 @@
     /* border: 2px solid black; */
     /* height: 660px; */
     height: 100vh;
+    width: auto;
 }
 
 .Login_Container {
