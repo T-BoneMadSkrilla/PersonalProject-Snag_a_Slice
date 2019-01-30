@@ -11,6 +11,7 @@
     /* background-color:  hsl(10, 9%, 52%); */
     /* border: 2px solid black; */
     height: 660px;
+    width: auto;
 }
 
 .Signup_Container {
