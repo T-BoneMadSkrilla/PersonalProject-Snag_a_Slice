@@ -6,14 +6,13 @@
 
     background-image: url("http://seventeen-ibiza.com/wp-content/uploads/2013/03/restaurant-seventeen-ibiza-santa-eulalia-pizza2.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1540px 800px;
+    background-position: fill;
+    background-size: 2020px 850px;
     
-
     /* background-color: ghostwhite; */
     /* border: 2px solid black; */
-    height: 100vh;
-    width: auto;
+    height: 850px;
+    width: 100vw;
 }
 
 .Center_Landing {
